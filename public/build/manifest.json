@@ -1,0 +1,59 @@
+{
+  "resources/auth/css/style.scss": {
+    "file": "assets/style-Bx2hx3bD.css",
+    "src": "resources/auth/css/style.scss",
+    "isEntry": true
+  },
+  "resources/auth/images/bg-inner.png": {
+    "file": "assets/bg-inner-CLiQPVWY.png",
+    "src": "resources/auth/images/bg-inner.png"
+  },
+  "resources/auth/images/bg-registration-form-9.jpg": {
+    "file": "assets/bg-registration-form-9-CnHwa0HU.jpg",
+    "src": "resources/auth/images/bg-registration-form-9.jpg"
+  },
+  "resources/js/vite.js": {
+    "file": "assets/vite-XR-08l1u.js",
+    "name": "vite",
+    "src": "resources/js/vite.js",
+    "isEntry": true
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-eUJL9FkU.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  },
+  "resources/zunzo/icon/icomoon/fonts/icomoon.eot": {
+    "file": "assets/icomoon-CvXVJAv2.eot",
+    "src": "resources/zunzo/icon/icomoon/fonts/icomoon.eot"
+  },
+  "resources/zunzo/icon/icomoon/fonts/icomoon.svg": {
+    "file": "assets/icomoon-_kEYzgFL.svg",
+    "src": "resources/zunzo/icon/icomoon/fonts/icomoon.svg"
+  },
+  "resources/zunzo/icon/icomoon/fonts/icomoon.ttf": {
+    "file": "assets/icomoon-CU3e5Dar.ttf",
+    "src": "resources/zunzo/icon/icomoon/fonts/icomoon.ttf"
+  },
+  "resources/zunzo/icon/icomoon/fonts/icomoon.woff": {
+    "file": "assets/icomoon-nfKclO8A.woff",
+    "src": "resources/zunzo/icon/icomoon/fonts/icomoon.woff"
+  },
+  "resources/zunzo/images/parallax/2.jpg": {
+    "file": "assets/2-Cftk_qfq.jpg",
+    "src": "resources/zunzo/images/parallax/2.jpg"
+  },
+  "resources/zunzo/images/retinal/1.jpg": {
+    "file": "assets/1-D6EPfQtD.jpg",
+    "src": "resources/zunzo/images/retinal/1.jpg"
+  },
+  "resources/zunzo/images/retinal/contact.jpg": {
+    "file": "assets/contact-CfuTRMw8.jpg",
+    "src": "resources/zunzo/images/retinal/contact.jpg"
+  },
+  "resources/zunzo/stylesheets/style.css": {
+    "file": "assets/style-HIVxPafG.css",
+    "src": "resources/zunzo/stylesheets/style.css",
+    "isEntry": true
+  }
+}

@@ -228,33 +228,6 @@ class PublicController extends Controller
 
         $this->calculateDiscount();
 
-
-        // $cart = LaraCart::find(['id' => $id]);
-
-        // if(!empty($cart))
-        // {
-        //     $hash = $cart->getHash();
-        //     LaraCart::updateItem($hash, 'options', $data);
-        //     LaraCart::updateItem($hash, 'name', $event->event_name);
-        //     LaraCart::updateItem($hash, 'price', $event->event_price);
-        //     LaraCart::updateItem($hash, 'qty', 1);
-        //     LaraCart::updateItem($hash, 'id', $id);
-        //     LaraCart::updateItem($hash, 'tax', null);
-        //     LaraCart::updateItem($hash, 'taxable', false);
-        // }
-        // else
-        // {
-        //     LaraCart::add(
-        //         $id,
-        //         $event->field_name,
-        //         1,
-        //         $event->event_price,
-        //         $data,
-        //         false,
-        //         true
-        //     );
-        // }
-
         return redirect()->back();
     }
 
@@ -280,36 +253,6 @@ class PublicController extends Controller
         $data['amount'] = $event->event_price;
 
         $user = User::create($data);
-
-
-        // $cart = LaraCart::find(['id' => $user->id]);
-
-        // if(!empty($cart))
-        // {
-        //     foreach(LaraCart::getItems() as $item){
-
-        //         $hash = $item->getHash();
-        //         LaraCart::updateItem($hash, 'options', $data);
-        //         LaraCart::updateItem($hash, 'name', $event->event_name);
-        //         LaraCart::updateItem($hash, 'price', $event->event_price);
-        //         LaraCart::updateItem($hash, 'qty', 1);
-        //         LaraCart::updateItem($hash, 'id', $id);
-        //         LaraCart::updateItem($hash, 'tax', null);
-        //         LaraCart::updateItem($hash, 'taxable', false);
-        //     }
-        // }
-        // else
-        // {
-        //     LaraCart::add(
-        //         $id,
-        //         $event->field_name,
-        //         1,
-        //         $event->event_price,
-        //         $data,
-        //         false,
-        //         true
-        //     );
-        // }
 
         return redirect()->back();
     }

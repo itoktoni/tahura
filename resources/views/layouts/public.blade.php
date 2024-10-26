@@ -177,7 +177,7 @@
                             <div class="textwidget mt-4">
 
                                 <p>
-                                    {{ env('APP_DESCRIPTION') }}
+                                    {{ env('APP_FOOTER') }}
                                 </p>
 
                             </div>
@@ -215,13 +215,34 @@
 
                 </div><!-- /.row -->
                 <div class="row footer-bottom">
+
                     <div class="col-md-6 col-sm-12">
-                        <div class="copyright">
-                            <p>©2024 <a href="{{ url('/') }}" target="_blank"> {{ config('app.name') }}.</a> All Rights
+
+                        <div class="text-left">
+                            @if (env('APP_FB', false))
+                            <a href="{{ env('APP_FB') }}"><i class="icon-facebook p-2"></i></a>
+                            @endif
+
+                            @if (env('APP_X', false))
+                            <a href="{{ env('APP_FX') }}"><i class="icon-twitter p-2"></i></a>
+                            @endif
+
+                            @if (env('APP_IG', false))
+                            <a href="{{ env('APP_IG') }}"><i class="icon-instagram p-2"></i></a>
+                            @endif
+                        </div>
+
+                    </div><!-- /.col-md-6 -->
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="copyright text-right">
+                            <p>©{{ date('Y') }} <a href="{{ url('/') }}" target="_blank"> {{ config('app.name') }}.</a> All Rights
                                 Reserved.
                             </p>
                         </div>
+
                     </div><!-- /.col-md-6 -->
+
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </div><!-- /.footer-widgets -->

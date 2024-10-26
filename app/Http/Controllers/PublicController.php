@@ -374,7 +374,7 @@ class PublicController extends Controller
 
         $user->discount_value = $disc;
         $user->fee = $admin_fee;
-        $user->total = ($sub - $disc) - $admin_fee;
+        $user->total = ($sub - $disc) + $admin_fee;
         $user->save();
     }
 
@@ -452,9 +452,28 @@ class PublicController extends Controller
                 'invoice_duration' => 172800,
                 'currency' => 'IDR',
                 'reminder_time' => 1,
+                'payment_methods' => [
+                    'CREDIT_CARD', 'OVO', 'QRIS', 'SHOPEEPAY', 'DANA', 'BCA', 'MANDIRI'
+                ],
                 'customer' => [
                     'email' => auth()->user()->email,
-                    'given_name' => auth()->user()->name,
+                    'given_names' => auth()->user()->name,
+                    'surname' => auth()->user()->name,
+                    'mobile_number' => auth()->user()->phone,
+                ],
+                "customer_notification_preference" => [
+                    "invoice_created" => [
+                      "whatsapp",
+                      "email",
+                    ],
+                    "invoice_reminder" => [
+                      "whatsapp",
+                      "email",
+                    ],
+                    "invoice_paid" =>  [
+                      "whatsapp",
+                      "email",
+                    ]
                 ],
                 'success_redirect_url' => config('app.url'),
                 'failure_redirect_url' => config('app.url'),

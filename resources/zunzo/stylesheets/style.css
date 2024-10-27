@@ -1197,7 +1197,7 @@ ul.submenu li:hover {
     background-color: var(--black);
     position: fixed;
     z-index: 1000000;
-    top: 3rem;
+    top: 4rem;
 	padding: 3rem 2rem;
     bottom: 0;
 	-webkit-transition: all 0.5s ease;
@@ -3443,4 +3443,59 @@ ul.link-footer-bottom {
 
 .header-event h5{
 	margin-bottom: 0px !important;
+}
+
+.submenu {
+	list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.benefit-on-right{
+		padding-left: 10px !important;
+	}
+
+	.benefit-item .benefit-number{
+		width: 80% !important;
+		padding-bottom: 20px;
+	}
+
+	.image-benefit{
+		margin-top: 20px;
+		height: 150px !important;
+		width: 150px !important;
+	}
+
+	.about-box{
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+	.about-box ul, .about-box ol{
+		margin-left: 20px !important;
+	}
+
+	#mainnav-mobi ul li{
+		position: unset;
+	}
+
+	.button-signout{
+		position: unset;
+	}
+
+	.minicar-footer{
+		top: 0px !important;
+	}
+
+	.minicart-close{
+		display: none;
+	}
+
+	.close-btn{
+		margin-top: -5px;
+	}
+
+	.nav-shop-cart .minicar-footer{
+		display: unset;
+	}
 }

@@ -61,60 +61,36 @@
                     @endif
 
                 </div>
-                <div class="minicar-footer" style="top: 80px">
+                <div class="minicar-footer">
 
                     <div class="view-cart">
                         <p class="total">
-
-                            <div class="row">
-
-                                <strong class="col-md-8">
-                                    {{ $data_user->field_name }} ({{ $data_user->has_event->field_name ?? '' }})
-                                </strong>
-
-                                <span class="col-md-4 text-right currency-symbol">
-                                    {{ number_format($data_user->amount ?? 0, 0, ',', '.') ?? '' }}
-                                </span>
-
-                            </div>
-
+                            <strong>{{ $data_user->field_name }} ({{ $data_user->has_event->field_name ?? '' }})</strong>
+                            <span class="currency-symbol">
+                                {{ number_format($data_user->amount ?? 0, 0, ',', '.') ?? '' }}
+                            </span>
                         </p>
-
                     </div>
 
                     {{-- //disini relationship --}}
 
                     @if ($relationship)
                         @foreach ($relationship as $item)
+
                         <div class="view-cart">
                             <p class="total">
-
-                                <div class="row">
-
-                                    <strong class="col-md-8">
-                                        <div class="row">
-
-                                            <div class="col-md-2">
-                                                <a class="btn btn-danger btn-sm" href="{{ route('remove', ['id' => $item->id]) }}">x</a>
-                                            </div>
-
-                                            <div class="col-md-10">
-                                                {{ $item->field_name }} ({{ $item->has_event->field_name ?? '' }})
-                                            </div>
-
-                                        </div>
-
+                                    <strong class="col-sm-10">
+                                        <a class="btn-remove" style="position: absolute;background: #DB4444;color:aliceblue;padding: 0px 10px;border-radius: 5px;margin-top:4px" href="{{ route('remove', ['id' => $item->id]) }}">X</a>
+                                        <span style="position: relative;margin-left:40px;">
+                                            {{ $item->field_name }}
+                                        </span>
                                     </strong>
-
-                                    <span class="col-md-4 text-right currency-symbol">
-                                        {{ number_format($item->amount ?? 0, 0, ',', '.') ?? '' }}
-                                    </span>
-
-                                </div>
-
+                                <span class="currency-symbol">
+                                    {{ number_format($item->amount ?? 0, 0, ',', '.') ?? '' }}
+                                </span>
                             </p>
-
                         </div>
+
                         @endforeach
                     @endif
 

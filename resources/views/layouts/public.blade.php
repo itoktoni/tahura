@@ -60,7 +60,7 @@
                             <li><a href="{{ route('page', ['slug' => $page->page_slug]) }}">{{ $page->page_title }}</a></li>
                             @endforeach
 
-                            <li>
+                            <li style="position: relative">
                                 <a href="{{ route('events') }}">Race</a>
                                 <ul class="submenu">
                                     @foreach ($events as $event)
@@ -362,39 +362,6 @@
     </div>
     <!-- Modal-login -->
 
-    <style>
-        .submenu {
-            list-style: none;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .benefit-on-right{
-                padding-left: 10px !important;
-            }
-
-            .benefit-item .benefit-number{
-                width: 80% !important;
-                padding-bottom: 20px;
-            }
-
-            .image-benefit{
-                margin-top: 20px;
-                height: 150px !important;
-                width: 150px !important;
-            }
-
-            .about-box{
-                padding-left: 10px !important;
-                padding-right: 10px !important;
-            }
-
-            .about-box ul, .about-box ol{
-                margin-left: 20px !important;
-            }
-        }
-
-    </style>
-
     <script type="text/javascript" src="{{ asset('zunzo/javascript/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('zunzo/javascript/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('zunzo/javascript/jquery.cookie.js') }}"></script>
@@ -410,6 +377,24 @@
     <script type="text/javascript" src="{{ asset('zunzo/javascript/main.js') }}"></script>
 
     @stack('js')
+
+
+    <script>
+        $(document).ready(function () {
+            $('.nav-cart-trigger').click(function () {
+                $('.nav-shop-cart').addClass('active');
+            });
+
+            $('.minicart-close').click(function () {
+                $('.nav-shop-cart').removeClass('active');
+                $('.overlay-menu-mobie').removeClass('active');
+            });
+
+            $('.close-btn').click(function () {
+                $('.nav-shop-cart').removeClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

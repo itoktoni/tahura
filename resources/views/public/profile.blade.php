@@ -34,9 +34,11 @@
                             <p class="post wow fadeInUp animated">
 
                                 <ul>
+                                    <li>Category : {{ $event->event_name ?? '' }}</li>
                                     <li>First Name : {{ auth()->user()->first_name }}</li>
                                     <li>Last Name : {{ auth()->user()->last_name }}</li>
                                     <li>Age : {{ auth()->user()->year }}</li>
+                                    <li>Gender : {{ auth()->user()->gender }}</li>
                                 </ul>
 
                             </p>

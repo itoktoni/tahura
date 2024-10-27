@@ -59,15 +59,40 @@
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <div class="form-floating">
-                                                <input type="text" name="community"
-                                                    value="{{ old('community') ?? (($user->community ?? null)) }}"
-                                                    class="form-control @error('community') error @enderror"
-                                                    id="floatingInput" placeholder="first name">
-                                                <label for="floatingInput">Komunitas</label>
-                                                @error('community')
-                                                    <span class="error">{{ $message }}</span>
-                                                @enderror
+                                            <div class="row">
+                                                <div class="col-md-6">
+
+                                                    <div class="form-floating">
+                                                        <select name="gender"
+                                                            class="form-select @error('gender') error @enderror"
+                                                            id="floatingInput" placeholder="gender">
+                                                            <option value="">- Silahkan Pilih -</option>
+                                                            @foreach ($gender as $key => $gitem)
+                                                                <option @if (($user && $gitem == $user->gender)) selected @endif
+                                                                    value="{{ $gitem }}">{{ $gitem }}</option>
+                                                            @endforeach
+                                                        </select>
+                                                        <label for="floatingInput">Gender</label>
+                                                        @error('gender')
+                                                            <span class="error">{{ $message }}</span>
+                                                        @enderror
+                                                    </div>
+
+
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" name="community"
+                                                            value="{{ old('community') ?? (($user->community ?? null)) }}"
+                                                            class="form-control @error('community') error @enderror"
+                                                            id="floatingInput" placeholder="first name">
+                                                        <label for="floatingInput">Komunitas</label>
+                                                        @error('community')
+                                                            <span class="error">{{ $message }}</span>
+                                                        @enderror
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -91,17 +116,12 @@
 
                                         <div class="col-md-6 mb-3">
                                             <div class="form-floating">
-                                                <select name="gender"
-                                                    class="form-select @error('gender') error @enderror"
-                                                    id="floatingInput" placeholder="gender">
-                                                    <option value="">- Silahkan Pilih -</option>
-                                                    @foreach ($gender as $key => $gitem)
-                                                        <option @if (($user && $gitem == $user->gender)) selected @endif
-                                                            value="{{ $gitem }}">{{ $gitem }}</option>
-                                                    @endforeach
-                                                </select>
-                                                <label for="floatingInput">Gender</label>
-                                                @error('gender')
+                                                <input type="text" name="itraid"
+                                                    value="{{ old('itraid') ?? (($user->itraid ?? null)) }}"
+                                                    class="form-control @error('itraid') error @enderror" id="floatingInput"
+                                                    placeholder="first name">
+                                                <label for="floatingInput">ITRA ID</label>
+                                                @error('itraid')
                                                     <span class="error">{{ $message }}</span>
                                                 @enderror
                                             </div>

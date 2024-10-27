@@ -6,7 +6,6 @@
 .env
 backup.env
 /encrypted
-/vendor/*
 firebase.json
 .env.backup
 .phpunit.result.cache

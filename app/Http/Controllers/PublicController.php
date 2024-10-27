@@ -100,8 +100,11 @@ class PublicController extends Controller
 
     public function profile()
     {
+        $event = auth()->user()->has_event ?? false;
+
         return view('public.profile')->with([
             'user' => auth()->user(),
+            'event' => $event
         ]);
     }
 

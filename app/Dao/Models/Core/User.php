@@ -99,6 +99,7 @@ class User extends Authenticatable implements AuthMustVerifyEmail
         'check',
         'fee',
         'confirmation',
+        'itraid',
     ];
 
     public $sortable = [

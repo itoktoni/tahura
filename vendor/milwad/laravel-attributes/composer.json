@@ -1,0 +1,58 @@
+{
+  "name": "milwad/laravel-attributes",
+  "description": "Make attributes easy",
+  "keywords": [
+    "milwad",
+    "milwad-dev",
+    "laravel-attributes",
+    "laravel attributes",
+    "easy attributes",
+    "laravel",
+    "laravel attributes package"
+  ],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "milwad khosravi",
+      "email": "milwad.dev@gmail.com",
+      "homepage": "https://github.com/milwad-dev",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^9.0|^10.0|^11.0"
+  },
+  "require-dev": {
+    "pestphp/pest-plugin-laravel": "^1.4.0|^2.0.0",
+    "orchestra/testbench": "^7.0|^8.0|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Milwad\\LaravelAttributes\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Milwad\\LaravelAttributes\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Milwad\\LaravelAttributes\\LaravelAttributesServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "test-coverage": "vendor/bin/pest --coverage-html ./coverage"
+  }
+}

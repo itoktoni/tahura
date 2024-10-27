@@ -161,7 +161,7 @@
                     </div><!-- /.col-md-4 -->
 
                     <div class="col-xxl-2 col-lg-2 col-xl-2 col-md-2 col-sm-12 logo-footer">
-                        <div class="widget">
+                        <div class="widget text-center">
                             <div class="textwidget">
                                 <a href="{{ url('/') }}" rel="home">
                                     <img id="a2"
@@ -185,7 +185,7 @@
                     </div><!-- /.col-md-4 -->
 
 
-                    <div class="col-xxl-4 col-lg-4 col-xl-4 col-md-4 col-sm-12 new-letter mt-2">
+                    <div class="col-xxl-4 col-lg-4 col-xl-4 col-md-4 col-sm-12 new-letter mt-5">
                         <div class="widget widget_text">
                             <div class="text-phone">
                                 <svg width="36" height="37" viewBox="0 0 36 37" fill="none"
@@ -218,7 +218,7 @@
 
                     <div class="col-md-6 col-sm-12">
 
-                        <div class="text-left">
+                        <div class="text-left mb-2">
                             @if (env('APP_FB', false))
                             <a href="{{ env('APP_FB') }}"><i class="icon-facebook p-2"></i></a>
                             @endif
@@ -361,6 +361,12 @@
         </div>
     </div>
     <!-- Modal-login -->
+
+    <style>
+        .submenu {
+            list-style: none;
+        }
+    </style>
 
     <script type="text/javascript" src="{{ asset('zunzo/javascript/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('zunzo/javascript/bootstrap.min.js') }}"></script>

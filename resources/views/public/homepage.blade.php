@@ -107,7 +107,7 @@
                         @endphp
                         @foreach ($benefits as $benefit)
 
-                        <div class="col-md-4 benefit-on-right">
+                        <div class="col-md-4 col-sm-12 benefit-on-right">
 
                             <div class="benefit-item">
                                 <div class="benefit-number">

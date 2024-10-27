@@ -366,6 +366,33 @@
         .submenu {
             list-style: none;
         }
+
+        @media only screen and (max-width: 600px) {
+            .benefit-on-right{
+                padding-left: 10px !important;
+            }
+
+            .benefit-item .benefit-number{
+                width: 80% !important;
+                padding-bottom: 20px;
+            }
+
+            .image-benefit{
+                margin-top: 20px;
+                height: 150px !important;
+                width: 150px !important;
+            }
+
+            .about-box{
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+
+            .about-box ul, .about-box ol{
+                margin-left: 20px !important;
+            }
+        }
+
     </style>
 
     <script type="text/javascript" src="{{ asset('zunzo/javascript/jquery.min.js') }}"></script>

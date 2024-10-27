@@ -33,6 +33,7 @@
 		<thead>
 			<tr>
 				<th width="1">No. </th>
+				<th>ITRA ID</th>
 				<th>BIB</th>
 				<th>NO. INVOICE</th>
 				<th>CATEGORY</th>
@@ -67,6 +68,7 @@
 			@forelse($data as $table)
 			<tr>
 				<td>{{ $loop->iteration }}</td>
+				<td>{{ $table->itraid }}</td>
 				<td>{{ $table->bib }}</td>
 				<td>{{ $table->external_id }}</td>
 				<td>{{ $table->category }}</td>

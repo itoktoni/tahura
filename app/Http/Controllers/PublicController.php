@@ -139,11 +139,9 @@ class PublicController extends Controller
         ];
 
         $relationship = [
-            'Suami',
-            'Istri',
+            'Orang Tua',
+            'Suami/Istri',
             'Anak',
-            'Nenek',
-            'Kakek',
             'Saudara',
         ];
 
@@ -238,7 +236,12 @@ class PublicController extends Controller
     {
         $reference = auth()->user()->id;
         $event_id = request()->get('event_id');
-        $event = Event::findOrFail($event_id);
+
+        $total = User::where('reference_id', $reference)->count();
+        if($total >= 2)
+        {
+            return redirect()->back()->with(['status' => 'Maximum 2 Family Member Reached']);
+        }
 
         $data = $request->all();
 
@@ -253,7 +256,7 @@ class PublicController extends Controller
 
         $data['reference_id'] = $reference;
         $data['id_event'] = $event_id;
-        $data['amount'] = $event->event_price;
+        $data['amount'] = 0;
 
         $user = User::create($data);
 

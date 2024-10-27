@@ -491,7 +491,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 mb-3">
                                             <div class="form-floating">
                                                 <input type="text" name="place_birth"
                                                     value="{{ old('place_birth') ?? ($user->place_birth ?? null) }}"

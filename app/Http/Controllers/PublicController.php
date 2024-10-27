@@ -374,7 +374,7 @@ class PublicController extends Controller
 
         if($total_event > $event->event_max)
         {
-        return redirect()->back()->with(['status' => env('EVENT_MAX', 'Event is Full')]);
+            return redirect()->back()->with(['status' => env('EVENT_MAX', 'Event is Full')]);
         }
 
         if(empty($user->payment_status))

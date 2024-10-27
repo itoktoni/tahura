@@ -235,7 +235,12 @@ class PublicController extends Controller
     public function relationship(RelationshipRequest $request)
     {
         $reference = auth()->user()->id;
-        $event_id = request()->get('event_id');
+        $id_event = auth()->user()->id_event;
+
+        if($id_event != 6)
+        {
+            return redirect()->back()->with(['status' => 'Personal Event must select as Fun Trail Family']);
+        }
 
         $total = User::where('reference_id', $reference)->count();
         if($total >= 2)
@@ -255,7 +260,7 @@ class PublicController extends Controller
         $data['date_birth'] = $request->date_birth1;
 
         $data['reference_id'] = $reference;
-        $data['id_event'] = $event_id;
+        $data['id_event'] = $id_event;
         $data['amount'] = 0;
 
         $user = User::create($data);

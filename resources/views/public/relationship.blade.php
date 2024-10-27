@@ -76,7 +76,7 @@
 
     <div class="col-md-6">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-3">
                 <div class="form-floating">
                     <input type="text" name="place_birth"
                         class="form-control @error('place_birth') error @enderror" id="floatingInput"

@@ -77,6 +77,7 @@ class User extends Authenticatable implements AuthMustVerifyEmail
         'blood_type',
         'illness',
         'emergency_contact',
+        'emergency_name',
         'community',
         'jersey',
         'relationship',
@@ -100,6 +101,7 @@ class User extends Authenticatable implements AuthMustVerifyEmail
         'fee',
         'confirmation',
         'itraid',
+        'kewarganegaraan',
     ];
 
     public $sortable = [

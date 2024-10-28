@@ -48,12 +48,14 @@
 				<th>PLACE BIRTH</th>
 				<th>DATE BIRTH</th>
 				<th>ADDRESS</th>
+				<th>KEWARGANEGARAAN</th>
 				<th>COUNTRY</th>
 				<th>PROVINCE</th>
 				<th>CITY</th>
 				<th>BLOOD TYPE</th>
 				<th>ILLNESS</th>
-				<th>EMERGENCY CONTACT</th>
+				<th>EMERGENCY CONTACT NAME</th>
+				<th>EMERGENCY CONTACT PHONE</th>
 				<th>COMMUNITY</th>
 				<th>JERSEY</th>
 				<th>PAYMENT STATUS</th>
@@ -83,11 +85,13 @@
 				<td>{{ $table->place_birth }}</td>
 				<td>{{ $table->date_birth }}</td>
 				<td>{{ $table->address }}</td>
+				<td>{{ $table->kewarganegaraan }}</td>
 				<td>{{ $table->country }}</td>
 				<td>{{ $table->province }}</td>
 				<td>{{ $table->city }}</td>
 				<td>{{ $table->blood_type }}</td>
 				<td>{{ $table->illness }}</td>
+				<td>{{ $table->emergency_name }}</td>
 				<td>{{ $table->emergency_contact }}</td>
 				<td>{{ $table->community }}</td>
 				<td>{{ $table->jersey }}</td>

@@ -146,8 +146,8 @@ class PublicController extends Controller
         ];
 
         $gender = GenderType::getOptions([
-            GenderType::Male,
-            GenderType::Female
+            GenderType::Men,
+            GenderType::Women
         ]);
 
         $family = User::with('has_relationship')
@@ -407,7 +407,7 @@ class PublicController extends Controller
                 'currency' => 'IDR',
                 'reminder_time' => 1,
                 'payment_methods' => [
-                    'CREDIT_CARD', 'OVO', 'QRIS', 'SHOPEEPAY', 'DANA', 'BCA', 'MANDIRI'
+                    'CREDIT_CARD', 'OVO', 'ASTRAPAY', 'BNI', 'BSI', 'BRI', 'CIMB', 'BJB', 'PERMATA', 'QRIS', 'SHOPEEPAY', 'DANA', 'BCA', 'MANDIRI'
                 ],
                 'customer' => [
                     'email' => auth()->user()->email,
@@ -473,7 +473,7 @@ class PublicController extends Controller
             {
                 $event = $user->has_event;
 
-                $gender = $user->gender == 'Male' ? 'M' : 'F';
+                $gender = $user->gender == GenderType::Men ? 'M' : 'W';
 
                 $category = $user->category == 'Open' ? 'O' : 'M';
 
@@ -492,8 +492,9 @@ class PublicController extends Controller
                 $relation = $user->has_relationship;
                 if(!empty($relation))
                 {
-                    foreach($relation as $kel){
-                        $gender = $kel->gender == 'Male' ? 'M' : 'F';
+                    foreach($relation as $kel)
+                    {
+                        $gender = $kel->gender == GenderType::Men ? 'M' : 'W';
 
                         $category = $kel->category == 'Open' ? 'O' : 'M';
 

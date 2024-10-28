@@ -262,6 +262,39 @@
                                                 @enderror
                                             </div>
                                         </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-floating">
+                                                <input type="text" name="kewarganegaraan"
+                                                    value="{{ old('kewarganegaraan') ?? (($user->kewarganegaraan ?? null)) }}"
+                                                    class="form-control @error('kewarganegaraan') error @enderror"
+                                                    id="floatingInput" placeholder="kewarganegaraan">
+                                                <label for="floatingInput">Kewarganegaraan</label>
+                                                @error('kewarganegaraan')
+                                                    <span class="error">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-floating">
+                                                <select name="jersey"
+                                                    class="form-select @error('jersey') error @enderror"
+                                                    id="floatingInput" placeholder="jersey">
+                                                    <option value="">- Silahkan Pilih -</option>
+                                                    @foreach ($jersey as $key => $jitem)
+                                                        <option @if (($user && $jitem == $user->jersey)) selected @endif
+                                                            value="{{ $jitem }}">{{ $jitem }}</option>
+                                                    @endforeach
+                                                </select>
+                                                <label for="floatingInput">Ukuran Jersey</label>
+                                                @error('jersey')
+                                                    <span class="error">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+
                                     </div>
 
                                     <div class="line"></div>
@@ -300,12 +333,12 @@
 
                                         <div class="col-md-6 mb-3">
                                             <div class="form-floating">
-                                                <input type="text" name="emergency_contact"
-                                                    value="{{ old('emergency_contact') ?? (($user->emergency_contact ?? null)) }}"
-                                                    class="form-control @error('emergency_contact') error @enderror"
-                                                    id="floatingInput" placeholder="emergency_contact">
-                                                <label for="floatingInput">Emergency Contact</label>
-                                                @error('emergency_contact')
+                                                <input type="text" name="emergency_name"
+                                                    value="{{ old('emergency_name') ?? (($user->emergency_name ?? null)) }}"
+                                                    class="form-control @error('emergency_name') error @enderror"
+                                                    id="floatingInput" placeholder="emergency_name">
+                                                <label for="floatingInput">Emergency Contact Name</label>
+                                                @error('emergency_name')
                                                     <span class="error">{{ $message }}</span>
                                                 @enderror
                                             </div>
@@ -313,17 +346,12 @@
 
                                         <div class="col-md-6 mb-3">
                                             <div class="form-floating">
-                                                <select name="jersey"
-                                                    class="form-select @error('jersey') error @enderror"
-                                                    id="floatingInput" placeholder="jersey">
-                                                    <option value="">- Silahkan Pilih -</option>
-                                                    @foreach ($jersey as $key => $jitem)
-                                                        <option @if (($user && $jitem == $user->jersey)) selected @endif
-                                                            value="{{ $jitem }}">{{ $jitem }}</option>
-                                                    @endforeach
-                                                </select>
-                                                <label for="floatingInput">Ukuran Jersey</label>
-                                                @error('jersey')
+                                                <input type="text" name="emergency_contact"
+                                                    value="{{ old('emergency_contact') ?? (($user->emergency_contact ?? null)) }}"
+                                                    class="form-control @error('emergency_contact') error @enderror"
+                                                    id="floatingInput" placeholder="emergency_contact">
+                                                <label for="floatingInput">Emergency Contact Phone</label>
+                                                @error('emergency_contact')
                                                     <span class="error">{{ $message }}</span>
                                                 @enderror
                                             </div>

@@ -12,7 +12,7 @@ class GenderType extends Enum implements LocalizedEnum
 
     public const Unknown = null;
 
-    public const Male = 'Male';
+    public const Men = 'Men';
 
-    public const Female = 'Female';
+    public const Women = 'Women';
 }

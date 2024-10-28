@@ -29,6 +29,14 @@ class ReportUserController extends ReportController
 
         $this->data = $this->getData($request);
 
+        if($start_date = $request->start_date){
+            $this->data = $this->data->whereDate('created_at', '>=', $start_date);
+        }
+
+        if($end_date = $request->end_date){
+            $this->data = $this->data->whereDate('created_at', '<=', $end_date);
+        }
+
         return moduleView(modulePathPrint(), $this->share([
             'data' => $this->data->get(),
         ]));

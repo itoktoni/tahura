@@ -477,6 +477,7 @@ class PublicController extends Controller
         ];
 
         $ip = $request->ip();
+        Log::info($ip);
 
         if(!in_array($ip, $allow)){
             Log::alert($ip);

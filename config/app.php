@@ -269,6 +269,8 @@ return [
         'ModelGroup' => SystemGroup::class,
         'UserModel' => UserModel::class,
         'QrCode' => Milon\Barcode\Facades\DNS2DFacade::class,
+        'DNS1D' => Milon\Barcode\Facades\DNS1DFacade::class,
+        'DNS2D' => Milon\Barcode\Facades\DNS2DFacade::class,
     ],
 
 ];

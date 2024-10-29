@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Dao\Models\Core\User;
 use App\Mail\CreateScheduleReceiveRunningTools;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class TestCommand extends Command
@@ -40,6 +41,7 @@ class TestCommand extends Command
      */
     public function handle()
     {
+        Log::info('sukses');
             $this->info('Success');
     }
 }

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Core\UserController;
 use App\Http\Controllers\Core\WebhookController;
 use App\Http\Controllers\PublicController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::post('login', [UserController::class, 'postLoginApi'])->name('postLoginApi');
+Route::get('send', function(){
+    Artisan::call("send:receive");
+});
 Route::post('deploy', [WebhookController::class, 'deploy'])->name('deploy');
 Route::post('/webhook/xendit', [PublicController::class, 'webhook'])->name('webhook');
 

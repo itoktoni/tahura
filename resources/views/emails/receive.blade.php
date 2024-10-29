@@ -98,7 +98,7 @@
                                         </table>
                                         <p
                                             style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; position: relative; font-size: 16px; line-height: 1.5em; margin-top: 0; text-align: left;">
-                                            Please, please scan QR code to receive Jersey {{ $user->jersey ?? '' }}.</p>
+                                            Please, please save your code to receive Jersey {{ $user->jersey ?? '' }}.</p>
 
 
                                         @if($user->has_relationship)
@@ -116,7 +116,7 @@
                                                     Jersey
                                                 </th>
                                                 <th style="text-align: center">
-                                                    QR Code
+                                                    Code
                                                 </th>
                                             </tr>
                                             @foreach ($user->has_relationship as $relation)
@@ -126,7 +126,7 @@
                                                 <td  style="text-align: center;width:20%">{{ $relation->jersey ?? '' }}</td>
                                                 <td  style="text-align: right;width:10%">
                                                     <div style="margin: 20px 10px">
-                                                        {!! QrCode::getBarcodeHTML($relation->bib, 'QRCODE', 4, 4) !!}
+                                                        {!! $relation->bib !!}
                                                     </div>
                                                 </td>
                                             </tr>

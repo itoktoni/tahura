@@ -57,9 +57,12 @@ class CreateScheduleReceiveRunningTools extends Mailable
      */
     public function attachments(): array
     {
-        Log::info(url('storage/' . env('APP_DOCUMENT')));
+        if(empty(env('APP_DOCUMENT'))){
+            return [];
+        }
+
         return [
-        Attachment::fromPath(url('storage/' . env('APP_DOCUMENT'))),
+            Attachment::fromPath(url('storage/' . env('APP_DOCUMENT'))),
         ];
     }
 }

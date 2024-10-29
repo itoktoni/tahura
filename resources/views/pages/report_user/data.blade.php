@@ -36,6 +36,7 @@
 				<th>ITRA ID</th>
 				<th>BIB</th>
 				<th>NO. INVOICE</th>
+				<th>EVENT</th>
 				<th>CATEGORY</th>
 				<th>ID USER</th>
 				<th>FIRST NAME</th>
@@ -73,6 +74,7 @@
 				<td>{{ $table->itraid }}</td>
 				<td>{{ $table->bib }}</td>
 				<td>{{ $table->external_id }}</td>
+				<td>{{ $table->has_event->event_name ?? '' }}</td>
 				<td>{{ $table->category }}</td>
 				<td>{{ $table->key }}</td>
 				<td>{{ $table->first_name }}</td>

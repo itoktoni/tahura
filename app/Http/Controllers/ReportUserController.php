@@ -18,7 +18,7 @@ class ReportUserController extends ReportController
 
     public function getData()
     {
-        $query = $this->model->dataRepository();
+        $query = $this->model->with('has_event');
 
         return $query;
     }

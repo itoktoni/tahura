@@ -85,7 +85,7 @@
                                                                         <td
                                                                             style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; position: relative;">
 
-                                                                            {!! $user->bib !!}
+                                                                            <h3><strong>{!! $user->bib !!}</strong></h3>
 
                                                                         </td>
                                                                     </tr>

@@ -56,6 +56,31 @@
         </div>
     </div>
 
+
+
+    <div class="col-md-6 mb-3">
+        <div class="form-floating">
+            <input type="text" name="place_birth"
+                class="form-control @error('place_birth') error @enderror" id="floatingInput"
+                placeholder="place_birth">
+            <label for="floatingInput">Tempat Lahir</label>
+            @error('place_birth')
+                <span class="error">{{ $message }}</span>
+            @enderror
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="form-floating">
+            <input type="date" name="date_birth1"
+                class="form-control @error('date_birth1') error @enderror" id="floatingInput"
+                placeholder="date_birth">
+            <label for="floatingInput">Tanggal Lahir</label>
+            @error('date_birth1')
+                <span class="error">{{ $message }}</span>
+            @enderror
+        </div>
+    </div>
+
     <div class="col-md-6 mb-3">
         <div class="form-floating">
             <select name="gender1" class="form-select @error('gender1') error @enderror" id="floatingInput"
@@ -74,30 +99,14 @@
         </div>
     </div>
 
-    <div class="col-md-6">
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <div class="form-floating">
-                    <input type="text" name="place_birth"
-                        class="form-control @error('place_birth') error @enderror" id="floatingInput"
-                        placeholder="place_birth">
-                    <label for="floatingInput">Tempat Lahir</label>
-                    @error('place_birth')
-                        <span class="error">{{ $message }}</span>
-                    @enderror
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-floating">
-                    <input type="date" name="date_birth1"
-                        class="form-control @error('date_birth1') error @enderror" id="floatingInput"
-                        placeholder="date_birth">
-                    <label for="floatingInput">Tanggal Lahir</label>
-                    @error('date_birth1')
-                        <span class="error">{{ $message }}</span>
-                    @enderror
-                </div>
-            </div>
+    <div class="col-md-6 mb-3">
+        <div class="form-floating">
+            <input type="text" name="kewarganegaraan"
+                class="form-control @error('kewarganegaraan') error @enderror" id="floatingInput" placeholder="kewarganegaraan">
+            <label for="floatingInput">Kewarganegaraan</label>
+            @error('kewarganegaraan')
+                <span class="error">{{ $message }}</span>
+            @enderror
         </div>
     </div>
 

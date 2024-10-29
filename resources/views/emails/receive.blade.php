@@ -85,7 +85,7 @@
                                                                         <td
                                                                             style="box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; position: relative;">
 
-                                                                            {!! DNS1D::getBarcodeHTML('4445645656', 'UPCA') !!}
+                                                                           {!! DNS2D::getBarcodeSVG('4445645656', 'QRCODE') !!}
 
                                                                         </td>
                                                                     </tr>

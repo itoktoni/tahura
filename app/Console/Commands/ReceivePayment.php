@@ -40,7 +40,8 @@ class ReceivePayment extends Command
      */
     public function handle()
     {
-        $data = User::whereNull('check')
+        $data = User::query()
+            ->whereNull('check')
             ->whereNotNull('bib')
             ->whereNotNull('email')
             ->where('is_paid', 'Yes')

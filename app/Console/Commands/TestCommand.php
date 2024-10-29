@@ -41,7 +41,24 @@ class TestCommand extends Command
      */
     public function handle()
     {
-        Log::info('sukses');
+        $data = User::query()
+            ->where('email', 'itok.toni@gmail.com')
+            ->whereNotNull('bib')
+            ->whereNotNull('email')
+            ->where('is_paid', 'Yes')
+            ->limit(2)->get();
+
+            if(!empty($data))
+            {
+                foreach($data as $user)
+                {
+                    Mail::to($user->email)->send(new CreateScheduleReceiveRunningTools($user));
+                    $user->update([
+                        'check' => date('Y-m-d')
+                    ]);
+                }
+            }
+
             $this->info('Success');
     }
 }

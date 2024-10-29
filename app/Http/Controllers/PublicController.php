@@ -461,6 +461,28 @@ class PublicController extends Controller
         $external_id = $request->get('external_id');
         $method = $request->get('payment_method');
 
+        $allow = [
+            '52.89.130.89',
+            '52.41.247.32',
+            '52.11.161.195',
+            '18.142.75.249',
+            '18.142.89.214',
+            '18.142.84.176',
+            '52.221.140.31',
+            '18.139.168.99',
+            '18.142.72.148',
+            '54.188.50.182',
+            '54.245.87.198',
+            '44.239.222.129',
+        ];
+
+        $ip = $request->ip();
+
+        if(!in_array($ip, $allow)){
+            Log::alert($ip);
+            return response()->json(['message' => 'Unauthorized'], 401);
+        }
+
         if($status == 'PAID')
         {
             $user = User::with(['has_event', 'has_relationship'])

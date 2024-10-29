@@ -2,9 +2,9 @@
 	<tr>
 		<td></td>
 		<td colspan="6">
-			<h3>
+			<h2>
 				<b>Report Participant</b>
-			</h3>
+			</h2>
 		</td>
 		<td rowspan="3">
 		</td>
@@ -33,34 +33,35 @@
 		<thead>
 			<tr>
 				<th width="1">No. </th>
-				<th>ITRA ID</th>
+				<th style="width: 50px">ITRA ID</th>
 				<th>BIB</th>
 				<th>NO. INVOICE</th>
-				<th>EVENT</th>
+				<th style="width: 50px">EVENT</th>
 				<th>CATEGORY</th>
-				<th>ID USER</th>
+				<th style="width: 50px">KTP</th>
 				<th>FIRST NAME</th>
 				<th>LAST NAME</th>
-				<th>NAMA USER</th>
+				<th style="width: 150px">NAMA USER</th>
 				<th>USERNAME</th>
 				<th>EMAIL</th>
 				<th>TANGGAL</th>
 
 				<th>PLACE BIRTH</th>
 				<th>DATE BIRTH</th>
-				<th>ADDRESS</th>
-				<th>KEWARGANEGARAAN</th>
+				<th style="width: 250px">ADDRESS</th>
+				<th style="width: 50px">KEWARGANEGARAAN</th>
 				<th>COUNTRY</th>
 				<th>PROVINCE</th>
-				<th>CITY</th>
-				<th>BLOOD TYPE</th>
+				<th style="width: 50px">CITY</th>
+				<th>BLOOD</th>
 				<th>ILLNESS</th>
-				<th>EMERGENCY CONTACT NAME</th>
-				<th>EMERGENCY CONTACT PHONE</th>
+				<th>EMERGENCY NAME</th>
+				<th>EMERGENCY PHONE</th>
 				<th>COMMUNITY</th>
 				<th>JERSEY</th>
-				<th>PAYMENT STATUS</th>
-				<th>QRCODE</th>
+				<th>PAYMENT</th>
+				<th style="width: 50px">QRCODE</th>
+
 			</tr>
 		</thead>
 		<tbody>
@@ -71,6 +72,8 @@
 			@forelse($data as $table)
 			<tr>
 				<td>{{ $loop->iteration }}</td>
+
+
 				<td>{{ $table->itraid }}</td>
 				<td>{{ $table->bib }}</td>
 				<td>{{ $table->external_id }}</td>
@@ -98,8 +101,11 @@
 				<td>{{ $table->community }}</td>
 				<td>{{ $table->jersey }}</td>
 				<td>{{ $table->payment_status }}</td>
+
 				<td>
-					{!! !empty($table->bib) ? QrCode::getBarcodeHTML($table->bib, 'QRCODE', 4, 4) : '' !!}
+					@if($table->bib)
+					<img src="data:image/png;base64,{!! DNS2D::getBarcodePNG('4', 'QRCODE') !!}" />
+					@endif
 				</td>
 
 			</tr>

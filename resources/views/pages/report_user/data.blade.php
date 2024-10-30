@@ -48,6 +48,7 @@
 
 				<th>PLACE BIRTH</th>
 				<th>DATE BIRTH</th>
+				<th>GENDER</th>
 				<th style="width: 250px">ADDRESS</th>
 				<th style="width: 50px">KEWARGANEGARAAN</th>
 				<th>COUNTRY</th>
@@ -89,6 +90,7 @@
 
 				<td>{{ $table->place_birth }}</td>
 				<td>{{ $table->date_birth }}</td>
+				<td>{{ $table->gender }}</td>
 				<td>{{ $table->address }}</td>
 				<td>{{ $table->kewarganegaraan }}</td>
 				<td>{{ $table->country }}</td>

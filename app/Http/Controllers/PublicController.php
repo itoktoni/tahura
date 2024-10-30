@@ -377,6 +377,13 @@ class PublicController extends Controller
         ->where('payment_status', 'PAID')
         ->count() + 1;
 
+        $relationship = $user->has_relationship->count();
+
+        if($user->id_event ==6 and $relationship != 2)
+        {
+            return redirect()->back()->with(['status' => 'Please add your family member!']);
+        }
+
         if($total_event > $event->event_max)
         {
             return redirect()->back()->with(['status' => env('EVENT_MAX', 'Event is Full')]);

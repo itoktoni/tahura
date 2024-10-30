@@ -152,6 +152,8 @@
                 <div class="widget-register background-green">
                     <div class="heading-register">
                         <h2 class="title-register">Create Account</h2>
+
+                        <p class="mt-3">UNTUK PENDAFTARAN SILAHKAN MEMBUAT ACCOUNT</p>
                     </div>
 
                     <div class="form-register">

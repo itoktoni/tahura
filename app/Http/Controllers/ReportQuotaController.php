@@ -40,13 +40,6 @@ class ReportQuotaController extends ReportController
 
         $this->data = $this->getData($request);
 
-        $batch = exportCsv('users', UserModel::query(), JobExportCsvUser::class, ',', 1);
-        if ($request->queue == 'batch') {
-            $url = moduleRoute('getCreate', array_merge(['batch' => $batch->id], $request->all()));
-
-            return redirect()->to($url);
-        }
-
         return moduleView(modulePathPrint(), $this->share([
             'data' => $this->data->get(),
         ]));

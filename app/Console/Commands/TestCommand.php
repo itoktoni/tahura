@@ -45,7 +45,7 @@ class TestCommand extends Command
             ->where('email', 'itok.toni@gmail.com')
             ->whereNotNull('bib')
             ->whereNotNull('email')
-            ->where('is_paid', 'Yes')
+            // ->where('is_paid', 'Yes')
             ->limit(2)->get();
 
             if(!empty($data))

@@ -91,5 +91,12 @@
     "Add Family": "",
     "Relationship": "",
     "Illness": "",
-    "Emergency Contact": ""
+    "Emergency Contact": "",
+    "Registration Data": "",
+    "Subtotal": "",
+    "Discount": "",
+    "Admin Fee": "",
+    "Grand Total": "",
+    "Payment": "",
+    "Checkout": ""
 }

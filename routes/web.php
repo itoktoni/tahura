@@ -38,6 +38,12 @@ Route::get('user/profile', 'App\Http\Controllers\Core\UserController@getProfile'
 Route::post('user/profile', 'App\Http\Controllers\Core\UserController@updateProfile')->middleware('auth')->name('updateProfile');
 Auth::routes(['verify' => true]);
 
+Route::get('language/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
+    return redirect()->back();
+})->name('language');
+
 Route::get('/', [PublicController::class, 'index'])->name('public');
 Route::get('/about', [PublicController::class, 'about'])->name('about');
 Route::get('/contact', [PublicController::class, 'contact'])->name('contact');

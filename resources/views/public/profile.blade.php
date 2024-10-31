@@ -33,20 +33,41 @@
 
                             <p class="post wow fadeInUp animated">
 
-                                <ul>
-                                    <li>Event : {{ $event->event_name ?? '' }}</li>
-                                    <li>Category : {{ $event->category ?? '' }}</li>
-                                    <li>First Name : {{ auth()->user()->first_name }}</li>
-                                    <li>Last Name : {{ auth()->user()->last_name }}</li>
-                                    <li>Age : {{ auth()->user()->year }}</li>
-                                    <li>Gender : {{ auth()->user()->gender }}</li>
-                                </ul>
+                                <table>
+                                    <tr>
+                                        <td style="width: 100px">{{ __('Event Name') }}</td>
+                                        <td style="width: 15px">:</td>
+                                        <td>{{ $event->event_name ?? '' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 100px">{{ __('Category') }}</td>
+                                        <td style="width: 15px">:</td>
+                                        <td>{{ $user->category ?? '' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 100px">{{ __('First Name') }}</td>
+                                        <td style="width: 15px">:</td>
+                                        <td>{{ auth()->user()->first_name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 100px">{{ __('Last Name') }}</td>
+                                        <td style="width: 15px">:</td>
+                                        <td>{{ auth()->user()->last_name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 100px">{{ __('Gender') }}</td>
+                                        <td style="width: 15px">:</td>
+                                        <td>{{ auth()->user()->gender }}</td>
+                                    </tr>
+                                </table>
 
                             </p>
                             @if (auth()->user()->payment_status != 'PAID')
                             <div class="line"></div>
                             <div class="about-button-group">
-                                <a class="flat-button wow fadeInUp animated" href="{{ route('event-register') }}">Register Event</a>
+                                <a class="flat-button wow fadeInUp animated" href="{{ route('event-register') }}">
+                                    {{ __('Register Event') }}
+                                </a>
                             </div>
                             @endif
                         </div>

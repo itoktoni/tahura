@@ -11,8 +11,9 @@
                     <div class="about-box">
 
                         <div class="title-box title-small-v2">
-                            <span class="sub-title wow fadeInUp animated">List Peserta</span>
-                            <h2 class="title-section wow fadeInUp animated">Participants List
+                            <span class="sub-title wow fadeInUp animated">{{ __('Data Participants') }}</span>
+                            <h2 class="title-section wow fadeInUp animated">
+                                {{ __('Participants List') }}
                             </h2>
                         </div><!-- header style v1 -->
 
@@ -21,13 +22,13 @@
                         <table class="table table-responsive" id="myTable">
                             <thead>
                                 <th style="width: 50px !important">No.</th>
-                                <th>Event</th>
-                                <th>Category</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Country</th>
-                                <th>Gender</th>
-                                <th>City</th>
+                                <th>{{ __('Event') }}</th>
+                                <th>{{ __('Category') }}</th>
+                                <th>{{ __('First Name') }}</th>
+                                <th>{{ __('Last Name') }}</th>
+                                <th>{{ __('Country') }}</th>
+                                <th>{{ __('Gender') }}</th>
+                                <th>{{ __('City') }}</th>
                             </thead>
                             @foreach ($user as $item)
                             <tr>

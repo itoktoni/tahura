@@ -78,11 +78,11 @@
                             <img src="{{ asset('zunzo/images/about/graphic-box.png') }}" alt="image shape">
                             <!-- header style v1 -->
                             <div class="title-box title-small-v2">
-                                <span class="sub-title wow fadeInUp animated">Welcome to {{ config('app.name') }}!</span>
+                                <span class="sub-title wow fadeInUp animated">{{ __('Welcome to') }} {{ config('app.name') }}!</span>
                                 <h2 class="title-section wow fadeInUp animated">{{ env('APP_TITLE') }}</h2>
                             </div><!-- header style v1 -->
                             <p class="post wow fadeInUp animated">
-                                {{ env('APP_DESCRIPTION') }}
+                                {{ __(env('APP_DESCRIPTION', 'About Homepage')) }}
                             </p>
                         </div>
                     </div>
@@ -97,8 +97,10 @@
             <div class="tf-benefit">
                 <!-- header style v2 -->
                 <div class="title-box-v2 center-title-box title-large">
-                    <span class="sub-title wow fadeInUp animated">OUR TEAM</span>
-                    <h2 class="title-section wow fadeInUp animated">TAHURA TRAIL RUNNING RACE 2025</h2>
+                    <span class="sub-title wow fadeInUp animated">{{ __('OUR TEAM') }}</span>
+                    <h2 class="title-section wow fadeInUp animated">
+                        {{ __('TAHURA TRAIL RUNNING RACE 2025') }}
+                    </h2>
                 </div><!-- header style v2 -->
                 <div class="benefit-wrap-content">
                     <div class="row">

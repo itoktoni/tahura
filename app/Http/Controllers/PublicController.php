@@ -130,12 +130,12 @@ class PublicController extends Controller
         ];
 
         $jersey = [
+            'XS',
             'S',
             'M',
             'L',
             'XL',
             'XXL',
-            'XXXL',
         ];
 
         $relationship = [
@@ -229,7 +229,7 @@ class PublicController extends Controller
 
         $this->calculateDiscount();
 
-        return redirect()->back();
+        return redirect()->back()->with(['status' => 'Save Cart Success']);
     }
 
     public function relationship(RelationshipRequest $request)

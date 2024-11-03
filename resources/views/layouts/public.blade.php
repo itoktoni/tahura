@@ -82,11 +82,11 @@
                             <li class="language">
                                 @if(session()->get('locale') == 'en')
                                 <a href="{{ route('language', ['locale' => 'id']) }}">
-                                    <img src="{{ asset('assets/id.png') }}" alt="icon">
+                                    <img src="{{ asset('assets/en.png') }}" alt="icon">
                                 </a>
                                 @else
                                 <a href="{{ route('language', ['locale' => 'en']) }}">
-                                    <img src="{{ asset('assets/en.png') }}" alt="icon">
+                                    <img src="{{ asset('assets/id.png') }}" alt="icon">
                                 </a>
                                 @endif
 

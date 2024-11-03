@@ -26,17 +26,6 @@ class RelationshipRequest extends FormRequest
             'relationship1' => 'required|string',
             'gender1' => 'required',
             'date_birth1' => 'required',
-            'key' => 'required',
-            'place_birth' => 'required',
-            'country' => 'required',
-            'province' => 'required',
-            'city' => 'required',
-            'address' => 'required',
-            'blood_type' => 'required',
-            'emergency_name' => 'required',
-            'kewarganegaraan' => 'required',
-            'emergency_contact' => 'required',
-            'jersey' => 'required',
         ];
     }
 

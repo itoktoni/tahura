@@ -5,6 +5,7 @@ namespace App\Dao\Models;
 use App\Dao\Builder\DataBuilder;
 use App\Dao\Models\Core\SystemModel;
 use App\Dao\Models\Core\User;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
 
 /**
@@ -32,7 +33,7 @@ class Event extends SystemModel
      *
      * @var array<int, string>
      */
-    protected $fillable = ['event_id', 'event_name', 'event_slug', 'event_price', 'event_image', 'event_picture', 'event_date', 'event_description', 'event_info', 'event_detail', 'event_map', 'event_mandatory', 'event_roundown', 'event_banner', 'event_page', 'event_background', 'event_code', 'event_active', 'event_max', 'event_code', 'event_confirm_page'];
+    protected $fillable = ['event_id', 'event_name', 'event_slug', 'event_price', 'event_image', 'event_picture', 'event_date', 'event_description', 'event_info', 'event_detail', 'event_map', 'event_mandatory', 'event_roundown', 'event_banner', 'event_page', 'event_background', 'event_code', 'event_active', 'event_max', 'event_code', 'event_confirm_page', 'event_confirm_page_id'];
 
     public static function field_name()
     {
@@ -42,6 +43,21 @@ class Event extends SystemModel
     public function getFieldNameAttribute()
     {
         return $this->{self::field_name()};
+    }
+
+    public static function field_confirmation()
+    {
+        return 'event_confirm_page';
+    }
+
+    public function getFieldConfirmationAttribute()
+    {
+        if(App::getLocale() == 'id')
+        {
+            return $this->{self::field_confirmation().'_id'};
+        }
+
+        return $this->{self::field_confirmation()};
     }
 
     public static function field_image()

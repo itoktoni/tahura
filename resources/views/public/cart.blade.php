@@ -52,10 +52,10 @@
 
                     <div class="time">
                         <img src="{{ asset('zunzo/images/retinal/fire.png') }}" alt="">
-                        <p>Your cart will expire on <span id="timer-sell-out1">{{ !empty($data_user->payment_expired) ? $data_user->payment_expired->diffForHumans() : '' }}</span>
-                            Please checkout now
-                            before your items sell
-                            out!</p>
+                        <p>
+                            {{ __('Your cart will expire on') }} <span id="timer-sell-out1">{{ !empty($data_user->payment_expired) ? $data_user->payment_expired->diffForHumans() : '' }}</span>
+                            {{ __('Please checkout now before your items sell out!') }}
+                        </p>
                     </div>
 
                     @endif
@@ -101,7 +101,7 @@
                                 <input type="text" class="input-cart ml-3" value="{{ $data_user->discount_code ?? null }}" placeholder="COUPON" name="coupon" id="">
                             </div>
                             <div class="col-md-4">
-                                <button class="btn btn-secondary btn-lg btn-cart" type="submit">Apply</button>
+                                <button class="btn btn-secondary btn-lg btn-cart" type="submit">{{ __('Apply') }}</button>
                             </div>
 
                             <div class="col-md-12 mt-3">

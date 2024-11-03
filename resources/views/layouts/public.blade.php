@@ -57,7 +57,7 @@
                             </li>
 
                             @foreach ($pages as $page)
-                            <li><a href="{{ route('page', ['slug' => $page->page_slug]) }}">{{ __($page->page_title) }}</a></li>
+                            <li><a href="{{ route('page', ['slug' => $page->page_slug]) }}">{{ $page->field_title }}</a></li>
                             @endforeach
 
                             <li style="position: relative">
@@ -79,7 +79,7 @@
                             <li><a href="{{ route('profile') }}">[ {{ __('Profile') }} ]</a></li>
                             @endauth
 
-                            <li>
+                            <li class="language">
                                 @if(session()->get('locale') == 'en')
                                 <a href="{{ route('language', ['locale' => 'id']) }}">
                                     <img src="{{ asset('assets/id.png') }}" alt="icon">
@@ -94,7 +94,7 @@
 
                             @if (auth()->check())
                                 @if (auth()->user()->payment_status != 'PAID')
-                                <li style="margin-left: 5rem">
+                                <li class="cart-custom">
                                 @include('public.cart')
                                 </li>
                                 @endif

@@ -96,15 +96,15 @@
 
                 <div class="row mt-3 mb-5">
                     <div class="col-md-6 form-group">
-                        <label for="">Content Page</label>
-                        <x-form-input col="6" type="hidden" class="editor" name="event_page" />
-                        <div id="editor">{!! $model ? $model->event_page : '' !!}</div>
+                        <label for="">Confirmation Page</label>
+                        <x-form-input col="6" type="hidden" class="editor" name="event_confirm_page" />
+                        <div id="editor">{!! $model ? $model->event_confirm_page : '' !!}</div>
                    </div>
 
                    <div class="col-md-6 form-group">
-                        <label for="">Confirmation Page</label>
-                        <x-form-input col="6" type="hidden" class="editor1" name="event_confirm_page" />
-                        <div id="editor1">{!! $model ? $model->event_confirm_page : '' !!}</div>
+                        <label for="">Confirmation Page Indonesia</label>
+                        <x-form-input col="6" type="hidden" class="editor1" name="event_confirm_page_id" />
+                        <div id="editor1">{!! $model ? $model->event_confirm_page_id : '' !!}</div>
                 </div>
 
                 </div>

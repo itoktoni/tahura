@@ -14,18 +14,12 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
-        '383eaff206634a77a1be54e64e6459c7' => __DIR__ . '/..' . '/sabre/uri/lib/functions.php',
         '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        '2b9d0f43f9552984cfa82fee95491826' => __DIR__ . '/..' . '/sabre/event/lib/coroutine.php',
-        'd81bab31d3feb45bfe2f283ea3c8fdf7' => __DIR__ . '/..' . '/sabre/event/lib/Loop/functions.php',
-        'a1cce3d26cc15c00fcd0b3354bd72c88' => __DIR__ . '/..' . '/sabre/event/lib/Promise/functions.php',
-        '3569eecfeed3bcf0bad3c998a494ecb8' => __DIR__ . '/..' . '/sabre/xml/lib/Deserializer/functions.php',
-        '93aa591bc4ca510c520999e34229ee79' => __DIR__ . '/..' . '/sabre/xml/lib/Serializer/functions.php',
+        '383eaff206634a77a1be54e64e6459c7' => __DIR__ . '/..' . '/sabre/uri/lib/functions.php',
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         '35a6ad97d21e794e7e22a17d806652e4' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
@@ -34,7 +28,14 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'f57d353b41eb2e234b26064d63d8c5dd' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Filesystem/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '2b9d0f43f9552984cfa82fee95491826' => __DIR__ . '/..' . '/sabre/event/lib/coroutine.php',
+        'd81bab31d3feb45bfe2f283ea3c8fdf7' => __DIR__ . '/..' . '/sabre/event/lib/Loop/functions.php',
+        'a1cce3d26cc15c00fcd0b3354bd72c88' => __DIR__ . '/..' . '/sabre/event/lib/Promise/functions.php',
+        '3569eecfeed3bcf0bad3c998a494ecb8' => __DIR__ . '/..' . '/sabre/xml/lib/Deserializer/functions.php',
+        '93aa591bc4ca510c520999e34229ee79' => __DIR__ . '/..' . '/sabre/xml/lib/Serializer/functions.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '98caa11a197f6516a8e48aa4abb5ccc6' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/helpers.php',
         '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
         'ebdb698ed4152ae445614b69b5e4bb6a' => __DIR__ . '/..' . '/sabre/http/lib/functions.php',
         'a1af1fc0cffb5f61cbaf64dbe030fdb9' => __DIR__ . '/..' . '/laravel/legacy-factories/helpers.php',
@@ -46,6 +47,7 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'a4039827aeb3e25109d3583c2ec72c98' => __DIR__ . '/..' . '/mehradsadeghi/laravel-filter-querystring/helpers/helpers.php',
         'c72349b1fe8d0deeedd3a52e8aa814d8' => __DIR__ . '/..' . '/mockery/mockery/library/helpers.php',
         'ce9671a430e4846b44e1c68c7611f9f5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
+        '9d631a451703f6ada3449e25a3224f73' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/helpers.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '72b1e3f4a2af9b30b3f137b3ec2057fc' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/helpers.php',
         'f7826ed3bdfb5d67f4fae1f44166940c' => __DIR__ . '/../..' . '/plugins/Global.php',
@@ -79,6 +81,7 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         array (
             'Touhidurabir\\ModelSanitize\\' => 27,
             'TijsVerkoyen\\CssToInlineStyles\\' => 31,
+            'Tighten\\Ziggy\\' => 14,
             'Tests\\' => 6,
             'Termwind\\' => 9,
         ),
@@ -111,6 +114,7 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Svg\\' => 4,
+            'Stichoza\\GoogleTranslate\\' => 25,
             'Spatie\\Translatable\\' => 20,
             'Spatie\\TemporaryDirectory\\' => 26,
             'Spatie\\Sluggable\\' => 17,
@@ -156,6 +160,9 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         ),
         'O' => 
         array (
+            'Outhebox\\TranslationsUI\\Database\\Seeders\\' => 41,
+            'Outhebox\\TranslationsUI\\Database\\Factories\\' => 43,
+            'Outhebox\\TranslationsUI\\' => 24,
             'OpenSpout\\' => 10,
             'Opcodes\\MailParser\\' => 19,
             'Opcodes\\LogViewer\\' => 18,
@@ -164,6 +171,8 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         array (
             'MyCLabs\\Enum\\' => 13,
             'Monolog\\' => 8,
+            'Momentum\\Modal\\Tests\\' => 21,
+            'Momentum\\Modal\\' => 15,
             'Mockery\\' => 8,
             'Milwad\\LaravelAttributes\\' => 25,
             'Mehradsadeghi\\FilterQueryString\\' => 32,
@@ -207,6 +216,7 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         ),
         'I' => 
         array (
+            'Inertia\\' => 8,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Foundation\\Auth\\' => 27,
             'Illuminate\\Database\\Eloquent\\' => 29,
@@ -269,6 +279,7 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'B' => 
         array (
             'Buki\\AutoRoute\\' => 15,
+            'Brick\\VarExporter\\' => 18,
             'Brick\\Math\\' => 11,
             'BeyondCode\\QueryDetector\\' => 25,
             'BenSampo\\Enum\\' => 14,
@@ -326,6 +337,10 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
             0 => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src',
+        ),
+        'Tighten\\Ziggy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tightenco/ziggy/src',
         ),
         'Tests\\' => 
         array (
@@ -442,6 +457,10 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Svg\\' => 
         array (
             0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+        ),
+        'Stichoza\\GoogleTranslate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stichoza/google-translate-php/src',
         ),
         'Spatie\\Translatable\\' => 
         array (
@@ -588,6 +607,18 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         array (
             0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
         ),
+        'Outhebox\\TranslationsUI\\Database\\Seeders\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/outhebox/laravel-translations/database/seeders',
+        ),
+        'Outhebox\\TranslationsUI\\Database\\Factories\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/outhebox/laravel-translations/database/factories',
+        ),
+        'Outhebox\\TranslationsUI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/outhebox/laravel-translations/src',
+        ),
         'OpenSpout\\' => 
         array (
             0 => __DIR__ . '/..' . '/openspout/openspout/src',
@@ -607,6 +638,14 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Momentum\\Modal\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/based/momentum-modal/tests',
+        ),
+        'Momentum\\Modal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/based/momentum-modal/src',
         ),
         'Mockery\\' => 
         array (
@@ -731,6 +770,10 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Jantinnerezo\\LivewireAlert\\' => 
         array (
             0 => __DIR__ . '/..' . '/jantinnerezo/livewire-alert/src',
+        ),
+        'Inertia\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -900,6 +943,10 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Buki\\AutoRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/izniburak/laravel-auto-routes/src',
+        ),
+        'Brick\\VarExporter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/brick/varexporter/src',
         ),
         'Brick\\Math\\' => 
         array (
@@ -1095,6 +1142,7 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\Localization' => __DIR__ . '/../..' . '/app/Http/Middleware/Localization.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
         'App\\Http\\Middleware\\ProAjaxMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/ProAjaxMiddleware.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -1271,6 +1319,18 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Brick\\Math\\Internal\\Calculator\\GmpCalculator' => __DIR__ . '/..' . '/brick/math/src/Internal/Calculator/GmpCalculator.php',
         'Brick\\Math\\Internal\\Calculator\\NativeCalculator' => __DIR__ . '/..' . '/brick/math/src/Internal/Calculator/NativeCalculator.php',
         'Brick\\Math\\RoundingMode' => __DIR__ . '/..' . '/brick/math/src/RoundingMode.php',
+        'Brick\\VarExporter\\ExportException' => __DIR__ . '/..' . '/brick/varexporter/src/ExportException.php',
+        'Brick\\VarExporter\\Internal\\GenericExporter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/GenericExporter.php',
+        'Brick\\VarExporter\\Internal\\ObjectExporter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/ObjectExporter.php',
+        'Brick\\VarExporter\\Internal\\ObjectExporter\\AnyObjectExporter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/ObjectExporter/AnyObjectExporter.php',
+        'Brick\\VarExporter\\Internal\\ObjectExporter\\ClosureExporter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/ObjectExporter/ClosureExporter.php',
+        'Brick\\VarExporter\\Internal\\ObjectExporter\\ClosureExporter\\PrettyPrinter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/ObjectExporter/ClosureExporter/PrettyPrinter.php',
+        'Brick\\VarExporter\\Internal\\ObjectExporter\\EnumExporter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/ObjectExporter/EnumExporter.php',
+        'Brick\\VarExporter\\Internal\\ObjectExporter\\InternalClassExporter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/ObjectExporter/InternalClassExporter.php',
+        'Brick\\VarExporter\\Internal\\ObjectExporter\\SerializeExporter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/ObjectExporter/SerializeExporter.php',
+        'Brick\\VarExporter\\Internal\\ObjectExporter\\SetStateExporter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/ObjectExporter/SetStateExporter.php',
+        'Brick\\VarExporter\\Internal\\ObjectExporter\\StdClassExporter' => __DIR__ . '/..' . '/brick/varexporter/src/Internal/ObjectExporter/StdClassExporter.php',
+        'Brick\\VarExporter\\VarExporter' => __DIR__ . '/..' . '/brick/varexporter/src/VarExporter.php',
         'Buki\\AutoRoute\\AutoRoute' => __DIR__ . '/..' . '/izniburak/laravel-auto-routes/src/AutoRoute.php',
         'Buki\\AutoRoute\\AutoRouteFacade' => __DIR__ . '/..' . '/izniburak/laravel-auto-routes/src/AutoRouteFacade.php',
         'Buki\\AutoRoute\\AutoRouteServiceProvider' => __DIR__ . '/..' . '/izniburak/laravel-auto-routes/src/AutoRouteServiceProvider.php',
@@ -4095,6 +4155,31 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'Inertia\\AlwaysProp' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/AlwaysProp.php',
+        'Inertia\\Commands\\CreateMiddleware' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Commands/CreateMiddleware.php',
+        'Inertia\\Commands\\StartSsr' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Commands/StartSsr.php',
+        'Inertia\\Commands\\StopSsr' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Commands/StopSsr.php',
+        'Inertia\\Controller' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Controller.php',
+        'Inertia\\Directive' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Directive.php',
+        'Inertia\\Inertia' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Inertia.php',
+        'Inertia\\LazyProp' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/LazyProp.php',
+        'Inertia\\Middleware' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Middleware.php',
+        'Inertia\\Response' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Response.php',
+        'Inertia\\ResponseFactory' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/ResponseFactory.php',
+        'Inertia\\ServiceProvider' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/ServiceProvider.php',
+        'Inertia\\Ssr\\BundleDetector' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Ssr/BundleDetector.php',
+        'Inertia\\Ssr\\Gateway' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Ssr/Gateway.php',
+        'Inertia\\Ssr\\HttpGateway' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Ssr/HttpGateway.php',
+        'Inertia\\Ssr\\Response' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Ssr/Response.php',
+        'Inertia\\Ssr\\SsrException' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Ssr/SsrException.php',
+        'Inertia\\Support\\Header' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Support/Header.php',
+        'Inertia\\Testing\\AssertableInertia' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Testing/AssertableInertia.php',
+        'Inertia\\Testing\\Concerns\\Debugging' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Testing/Concerns/Debugging.php',
+        'Inertia\\Testing\\Concerns\\Has' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Testing/Concerns/Has.php',
+        'Inertia\\Testing\\Concerns\\Interaction' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Testing/Concerns/Interaction.php',
+        'Inertia\\Testing\\Concerns\\Matching' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Testing/Concerns/Matching.php',
+        'Inertia\\Testing\\Concerns\\PageObject' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Testing/Concerns/PageObject.php',
+        'Inertia\\Testing\\TestResponseMacros' => __DIR__ . '/..' . '/inertiajs/inertia-laravel/src/Testing/TestResponseMacros.php',
         'Jantinnerezo\\LivewireAlert\\Exceptions\\AlertException' => __DIR__ . '/..' . '/jantinnerezo/livewire-alert/src/Exceptions/AlertException.php',
         'Jantinnerezo\\LivewireAlert\\LivewireAlert' => __DIR__ . '/..' . '/jantinnerezo/livewire-alert/src/LivewireAlert.php',
         'Jantinnerezo\\LivewireAlert\\LivewireAlertServiceProvider' => __DIR__ . '/..' . '/jantinnerezo/livewire-alert/src/LivewireAlertServiceProvider.php',
@@ -5413,6 +5498,8 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Mockery\\Undefined' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Undefined.php',
         'Mockery\\VerificationDirector' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationDirector.php',
         'Mockery\\VerificationExpectation' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/VerificationExpectation.php',
+        'Momentum\\Modal\\Modal' => __DIR__ . '/..' . '/based/momentum-modal/src/Modal.php',
+        'Momentum\\Modal\\ModalServiceProvider' => __DIR__ . '/..' . '/based/momentum-modal/src/ModalServiceProvider.php',
         'Monolog\\Attribute\\AsMonologProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/AsMonologProcessor.php',
         'Monolog\\Attribute\\WithMonologChannel' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/WithMonologChannel.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
@@ -5826,6 +5913,57 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Orangehill\\Iseed\\IseedCommand' => __DIR__ . '/..' . '/orangehill/iseed/src/Orangehill/Iseed/IseedCommand.php',
         'Orangehill\\Iseed\\IseedServiceProvider' => __DIR__ . '/..' . '/orangehill/iseed/src/Orangehill/Iseed/IseedServiceProvider.php',
         'Orangehill\\Iseed\\TableNotFoundException' => __DIR__ . '/..' . '/orangehill/iseed/src/Orangehill/Iseed/Exceptions.php',
+        'Outhebox\\TranslationsUI\\Actions\\CopyPhrasesFromSourceAction' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Actions/CopyPhrasesFromSourceAction.php',
+        'Outhebox\\TranslationsUI\\Actions\\CopySourceKeyToTranslationsAction' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Actions/CopySourceKeyToTranslationsAction.php',
+        'Outhebox\\TranslationsUI\\Actions\\CreateSourceKeyAction' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Actions/CreateSourceKeyAction.php',
+        'Outhebox\\TranslationsUI\\Actions\\CreateTranslationForLanguageAction' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Actions/CreateTranslationForLanguageAction.php',
+        'Outhebox\\TranslationsUI\\Actions\\SyncPhrasesAction' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Actions/SyncPhrasesAction.php',
+        'Outhebox\\TranslationsUI\\Console\\Commands\\CleanOldVersionCommand' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Console/Commands/CleanOldVersionCommand.php',
+        'Outhebox\\TranslationsUI\\Console\\Commands\\ContributorCommand' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Console/Commands/ContributorCommand.php',
+        'Outhebox\\TranslationsUI\\Console\\Commands\\ExportTranslationsCommand' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Console/Commands/ExportTranslationsCommand.php',
+        'Outhebox\\TranslationsUI\\Console\\Commands\\ImportTranslationsCommand' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Console/Commands/ImportTranslationsCommand.php',
+        'Outhebox\\TranslationsUI\\Console\\Commands\\PublishCommand' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Console/Commands/PublishCommand.php',
+        'Outhebox\\TranslationsUI\\Database\\Factories\\ContributorFactory' => __DIR__ . '/..' . '/outhebox/laravel-translations/database/factories/ContributorFactory.php',
+        'Outhebox\\TranslationsUI\\Database\\Factories\\InviteFactory' => __DIR__ . '/..' . '/outhebox/laravel-translations/database/factories/InviteFactory.php',
+        'Outhebox\\TranslationsUI\\Database\\Factories\\LanguageFactory' => __DIR__ . '/..' . '/outhebox/laravel-translations/database/factories/LanguageFactory.php',
+        'Outhebox\\TranslationsUI\\Database\\Factories\\PhraseFactory' => __DIR__ . '/..' . '/outhebox/laravel-translations/database/factories/PhraseFactory.php',
+        'Outhebox\\TranslationsUI\\Database\\Factories\\TranslationFactory' => __DIR__ . '/..' . '/outhebox/laravel-translations/database/factories/TranslationFactory.php',
+        'Outhebox\\TranslationsUI\\Database\\Factories\\TranslationFileFactory' => __DIR__ . '/..' . '/outhebox/laravel-translations/database/factories/TranslationFileFactory.php',
+        'Outhebox\\TranslationsUI\\Database\\Seeders\\LanguagesTableSeeder' => __DIR__ . '/..' . '/outhebox/laravel-translations/database/seeders/LanguagesTableSeeder.php',
+        'Outhebox\\TranslationsUI\\Enums\\RoleEnum' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Enums/RoleEnum.php',
+        'Outhebox\\TranslationsUI\\Enums\\StatusEnum' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Enums/StatusEnum.php',
+        'Outhebox\\TranslationsUI\\Exceptions\\TranslationsUIExceptionHandler' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Exceptions/TranslationsUIExceptionHandler.php',
+        'Outhebox\\TranslationsUI\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Controllers/Auth/AuthenticatedSessionController.php',
+        'Outhebox\\TranslationsUI\\Http\\Controllers\\Auth\\InvitationAcceptController' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Controllers/Auth/InvitationAcceptController.php',
+        'Outhebox\\TranslationsUI\\Http\\Controllers\\Auth\\NewPasswordController' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Controllers/Auth/NewPasswordController.php',
+        'Outhebox\\TranslationsUI\\Http\\Controllers\\Auth\\PasswordResetLinkController' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Controllers/Auth/PasswordResetLinkController.php',
+        'Outhebox\\TranslationsUI\\Http\\Controllers\\ContributorController' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Controllers/ContributorController.php',
+        'Outhebox\\TranslationsUI\\Http\\Controllers\\PhraseController' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Controllers/PhraseController.php',
+        'Outhebox\\TranslationsUI\\Http\\Controllers\\ProfileController' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Controllers/ProfileController.php',
+        'Outhebox\\TranslationsUI\\Http\\Controllers\\SourcePhraseController' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Controllers/SourcePhraseController.php',
+        'Outhebox\\TranslationsUI\\Http\\Controllers\\TranslationController' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Controllers/TranslationController.php',
+        'Outhebox\\TranslationsUI\\Http\\Middleware\\Authenticate' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Middleware/Authenticate.php',
+        'Outhebox\\TranslationsUI\\Http\\Middleware\\HandleInertiaRequests' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Middleware/HandleInertiaRequests.php',
+        'Outhebox\\TranslationsUI\\Http\\Middleware\\RedirectIfNotOwner' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Middleware/RedirectIfNotOwner.php',
+        'Outhebox\\TranslationsUI\\Http\\Requests\\LoginRequest' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Requests/LoginRequest.php',
+        'Outhebox\\TranslationsUI\\Http\\Resources\\ContributorResource' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Resources/ContributorResource.php',
+        'Outhebox\\TranslationsUI\\Http\\Resources\\InviteResource' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Resources/InviteResource.php',
+        'Outhebox\\TranslationsUI\\Http\\Resources\\LanguageResource' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Resources/LanguageResource.php',
+        'Outhebox\\TranslationsUI\\Http\\Resources\\PhraseResource' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Resources/PhraseResource.php',
+        'Outhebox\\TranslationsUI\\Http\\Resources\\TranslationFileResource' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Resources/TranslationFileResource.php',
+        'Outhebox\\TranslationsUI\\Http\\Resources\\TranslationResource' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Http/Resources/TranslationResource.php',
+        'Outhebox\\TranslationsUI\\Mail\\InviteCreated' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Mail/InviteCreated.php',
+        'Outhebox\\TranslationsUI\\Mail\\ResetPassword' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Mail/ResetPassword.php',
+        'Outhebox\\TranslationsUI\\Models\\Contributor' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Models/Contributor.php',
+        'Outhebox\\TranslationsUI\\Models\\Invite' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Models/Invite.php',
+        'Outhebox\\TranslationsUI\\Models\\Language' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Models/Language.php',
+        'Outhebox\\TranslationsUI\\Models\\Phrase' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Models/Phrase.php',
+        'Outhebox\\TranslationsUI\\Models\\Translation' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Models/Translation.php',
+        'Outhebox\\TranslationsUI\\Models\\TranslationFile' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Models/TranslationFile.php',
+        'Outhebox\\TranslationsUI\\Traits\\HasDatabaseConnection' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Traits/HasDatabaseConnection.php',
+        'Outhebox\\TranslationsUI\\Traits\\HasUuid' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/Traits/HasUuid.php',
+        'Outhebox\\TranslationsUI\\TranslationsManager' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/TranslationsManager.php',
+        'Outhebox\\TranslationsUI\\TranslationsUIServiceProvider' => __DIR__ . '/..' . '/outhebox/laravel-translations/src/TranslationsUIServiceProvider.php',
         'Override' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/Override.php',
         'PHPStan\\PhpDocParser\\Ast\\AbstractNodeVisitor' => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src/Ast/AbstractNodeVisitor.php',
         'PHPStan\\PhpDocParser\\Ast\\Attribute' => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src/Ast/Attribute.php',
@@ -8240,6 +8378,15 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Spatie\\Translatable\\HasTranslations' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/HasTranslations.php',
         'Spatie\\Translatable\\Translatable' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/Translatable.php',
         'Spatie\\Translatable\\TranslatableServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/TranslatableServiceProvider.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\LanguagesRequestException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/LanguagesRequestException.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\LargeTextException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/LargeTextException.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\RateLimitException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/RateLimitException.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\TranslationDecodingException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/TranslationDecodingException.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\TranslationRequestException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/TranslationRequestException.php',
+        'Stichoza\\GoogleTranslate\\GoogleTranslate' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/GoogleTranslate.php',
+        'Stichoza\\GoogleTranslate\\Tokens\\GoogleTokenGenerator' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Tokens/GoogleTokenGenerator.php',
+        'Stichoza\\GoogleTranslate\\Tokens\\SampleTokenGenerator' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Tokens/SampleTokenGenerator.php',
+        'Stichoza\\GoogleTranslate\\Tokens\\TokenProviderInterface' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Tokens/TokenProviderInterface.php',
         'Stringable' => __DIR__ . '/..' . '/myclabs/php-enum/stubs/Stringable.php',
         'Svg\\CssLength' => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg/CssLength.php',
         'Svg\\DefaultStyle' => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg/DefaultStyle.php',
@@ -9262,6 +9409,14 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'Tighten\\Ziggy\\BladeRouteGenerator' => __DIR__ . '/..' . '/tightenco/ziggy/src/BladeRouteGenerator.php',
+        'Tighten\\Ziggy\\CommandRouteGenerator' => __DIR__ . '/..' . '/tightenco/ziggy/src/CommandRouteGenerator.php',
+        'Tighten\\Ziggy\\Output\\File' => __DIR__ . '/..' . '/tightenco/ziggy/src/Output/File.php',
+        'Tighten\\Ziggy\\Output\\MergeScript' => __DIR__ . '/..' . '/tightenco/ziggy/src/Output/MergeScript.php',
+        'Tighten\\Ziggy\\Output\\Script' => __DIR__ . '/..' . '/tightenco/ziggy/src/Output/Script.php',
+        'Tighten\\Ziggy\\Output\\Types' => __DIR__ . '/..' . '/tightenco/ziggy/src/Output/Types.php',
+        'Tighten\\Ziggy\\Ziggy' => __DIR__ . '/..' . '/tightenco/ziggy/src/Ziggy.php',
+        'Tighten\\Ziggy\\ZiggyServiceProvider' => __DIR__ . '/..' . '/tightenco/ziggy/src/ZiggyServiceProvider.php',
         'TijsVerkoyen\\CssToInlineStyles\\CssToInlineStyles' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/CssToInlineStyles.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Processor.php',

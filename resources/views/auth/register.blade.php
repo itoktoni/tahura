@@ -10,11 +10,11 @@
         src="{{ env('APP_LOGO') ? url('storage/' . env('APP_LOGO')) : url('assets/media/image/logo.png') }}">
     </h2>
 
-    <h3>Register Form</h3>
+    <h3>{{ __('Register Form') }}</h3>
 
     <div class="form-full">
         <div class="form-wrapper">
-            <label for="">Your Full Name *</label>
+            <label for="">{{ __('Your Full Name') }} *</label>
             <input type="text" class="form-control" value="{{ old('name') }}"  name="name" placeholder="input your name">
             @error('name')
             <span class="error error-top">* {{ $message }}</span>
@@ -24,7 +24,7 @@
 
     <div class="form-full">
         <div class="form-wrapper">
-            <label for="">Email *</label>
+            <label for="">{{ __('Email Address') }} *</label>
             <input type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Input your email">
             @error('email')
             <span class="error error-top">* {{ $message }}</span>
@@ -34,12 +34,12 @@
 
     <div class="form-row">
         <div class="form-wrapper">
-            <label for="">Password *</label>
+            <label for="">{{ __('Password') }} *</label>
             <input type="password" class="form-control" name="password" placeholder="input your password">
         </div>
 
         <div class="form-wrapper">
-            <label for="">Confirm Password *</label>
+            <label for="">{{ __('Confirm Password') }} *</label>
             <input type="password" class="form-control" name="password_confirmation" placeholder="confirmation password">
             @error('password')
             <span class="error">* {{ $message }}</span>
@@ -54,7 +54,7 @@
 
         <div class="form-wrapper">
             <button class="button" type="submit" data-text="Submit">
-                <span>Register</span>
+                <span>{{ __('Register') }}</span>
             </button>
         </div>
 

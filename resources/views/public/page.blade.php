@@ -18,11 +18,8 @@
                     <div class="slide-item">
                         <div class="silde-content">
 
-                            <h1 class="flat-title-slider">{{ $page->page_name }}</h1>
+                            <h1 class="flat-title-slider">{{ $page->field_name }}</h1>
 
-                            @if(!empty($page->page_description))
-                            <p class="flat-description-slider">{!! $page->page_description !!}</p>
-                            @endif
                         </div>
                     </div>
                 </div>
@@ -39,12 +36,12 @@
             <div class="about-box">
                 <div class="title-box title-small-v2">
                     <h2 class="title-section wow fadeInUp animated text-center">
-                        {{ $page->page_title }}
+                        {{ $page->field_title }}
                     </h2>
                 </div>
 
                 <div class="post wow fadeInUp animated">
-                    {!! $page->page_body !!}
+                    {!! $page->field_body !!}
                 </div>
             </div>
 

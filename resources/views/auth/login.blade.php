@@ -10,17 +10,17 @@
         src="{{ env('APP_LOGO') ? url('storage/' . env('APP_LOGO')) : url('assets/media/image/logo.png') }}">
     </h2>
 
-    <h3>Login Form</h3>
+    <h3>{{ __('Login Form') }}</h3>
     <div class="form-full">
         <div class="form-wrapper">
-            <label for="">Username or Email</label>
+            <label for="">{{ __('Username or Email') }}</label>
             <input type="text" class="form-control" value="{{ old('login') }}"  name="login" placeholder="input your credentials">
         </div>
     </div>
 
     <div class="form-full">
         <div class="form-wrapper">
-            <label for="">Password</label>
+            <label for="">{{ __('Password') }}</label>
             <input type="password" class="form-control" name="password" placeholder="input your password">
             @error('username')
             <span class="error">{{ $message }}</span>
@@ -35,7 +35,7 @@
 
         <div class="form-wrapper">
             <button class="button" type="submit" data-text="Submit">
-                <span>Login</span>
+                <span>{{ __('Login') }}</span>
             </button>
         </div>
     </div>

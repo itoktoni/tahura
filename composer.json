@@ -37,6 +37,7 @@
         "milon/barcode": "^11.0",
         "milwad/laravel-attributes": "^1.1",
         "opcodesio/log-viewer": "^3.1",
+        "outhebox/laravel-translations": "^1.1",
         "phpoffice/phpspreadsheet": "^2.2",
         "pusher/pusher-php-server": "^7.2",
         "sabre/dav": "^4.6",

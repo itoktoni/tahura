@@ -365,7 +365,7 @@
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" name="confirmation" {{ !empty($user->confirmation) ? 'checked' : '' }} type="checkbox" id="inlineCheckbox1">
                                                 <label class="form-check-label" for="inlineCheckbox1">
-                                                    {!! $event->event_confirm_page ?? 'Confirmation of Agreement' !!}
+                                                    {!! $event->field_confirmation ?? 'Confirmation of Agreement' !!}
 
                                                     @error('confirmation')
                                                         ( <span class="error text-danger">{{ $message }}</span> )

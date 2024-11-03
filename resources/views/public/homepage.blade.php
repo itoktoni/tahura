@@ -82,7 +82,7 @@
                                 <h2 class="title-section wow fadeInUp animated">{{ env('APP_TITLE') }}</h2>
                             </div><!-- header style v1 -->
                             <p class="post wow fadeInUp animated">
-                                {{ __(env('APP_DESCRIPTION', 'About Homepage')) }}
+                                {{ __('homepage_about') }}
                             </p>
                         </div>
                     </div>
@@ -153,9 +153,9 @@
             <div class="col-md-6 pd-form">
                 <div class="widget-register background-green">
                     <div class="heading-register">
-                        <h2 class="title-register">Create Account</h2>
+                        <h2 class="title-register">{{ __('Create Account') }}</h2>
 
-                        <p class="mt-3">UNTUK PENDAFTARAN SILAHKAN MEMBUAT ACCOUNT</p>
+                        <p class="mt-3">{{ __('FOR REGISTRATION PLEASE CREATE AN ACCOUNT') }}</p>
                     </div>
 
                     <div class="form-register">
@@ -177,7 +177,7 @@
         <div class="themeflat-container">
             <div class="title">
                 <h3 class="text-center">
-                    Supported By
+                    {{ __('Supported By') }}
                 </h3>
             </div>
 

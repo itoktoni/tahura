@@ -68,7 +68,7 @@ return [
     */
     'database' => [
 
-        'connection' => '',
+        'connection' => 'mysql',
 
         'languages_table' => 'languages',
 

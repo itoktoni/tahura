@@ -3449,6 +3449,15 @@ ul.link-footer-bottom {
 	list-style: none;
 }
 
+.language{
+	margin-right: 0rem;
+	margin-left: 2rem;
+}
+
+.cart{
+	margin-top: 5px;
+}
+
 @media only screen and (max-width: 600px) {
 
 	.benefit-on-right{
@@ -3497,5 +3506,10 @@ ul.link-footer-bottom {
 
 	.nav-shop-cart .minicar-footer{
 		display: unset;
+	}
+
+	.language{
+		margin-right: unset;
+		margin-left: unset;
 	}
 }

@@ -78,11 +78,11 @@
                             <img src="{{ asset('zunzo/images/about/graphic-box.png') }}" alt="image shape">
                             <!-- header style v1 -->
                             <div class="title-box title-small-v2">
-                                <span class="sub-title wow fadeInUp animated">Welcome to {{ config('app.name') }}!</span>
+                                <span class="sub-title wow fadeInUp animated">{{ __('Welcome to') }} {{ config('app.name') }}!</span>
                                 <h2 class="title-section wow fadeInUp animated">{{ env('APP_TITLE') }}</h2>
                             </div><!-- header style v1 -->
                             <p class="post wow fadeInUp animated">
-                                {{ env('APP_DESCRIPTION') }}
+                                {{ __('homepage_about') }}
                             </p>
                         </div>
                     </div>
@@ -97,8 +97,10 @@
             <div class="tf-benefit">
                 <!-- header style v2 -->
                 <div class="title-box-v2 center-title-box title-large">
-                    <span class="sub-title wow fadeInUp animated">OUR TEAM</span>
-                    <h2 class="title-section wow fadeInUp animated">TAHURA TRAIL RUNNING RACE 2025</h2>
+                    <span class="sub-title wow fadeInUp animated">{{ __('OUR TEAM') }}</span>
+                    <h2 class="title-section wow fadeInUp animated">
+                        {{ __('TAHURA TRAIL RUNNING RACE 2025') }}
+                    </h2>
                 </div><!-- header style v2 -->
                 <div class="benefit-wrap-content">
                     <div class="row">
@@ -151,9 +153,9 @@
             <div class="col-md-6 pd-form">
                 <div class="widget-register background-green">
                     <div class="heading-register">
-                        <h2 class="title-register">Create Account</h2>
+                        <h2 class="title-register">{{ __('Create Account') }}</h2>
 
-                        <p class="mt-3">UNTUK PENDAFTARAN SILAHKAN MEMBUAT ACCOUNT</p>
+                        <p class="mt-3">{{ __('FOR REGISTRATION PLEASE CREATE AN ACCOUNT') }}</p>
                     </div>
 
                     <div class="form-register">
@@ -175,7 +177,7 @@
         <div class="themeflat-container">
             <div class="title">
                 <h3 class="text-center">
-                    Supported By
+                    {{ __('Supported By') }}
                 </h3>
             </div>
 

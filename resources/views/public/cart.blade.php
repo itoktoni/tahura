@@ -40,7 +40,7 @@
         <div class="minicar-overlay"></div>
         <div class="nav-shop-cart ">
             <div class="minicar-header">
-                <span class="title">Registration Data</span>
+                <span class="title">{{ __('Registration Data') }}</span>
                 <span class="minicart-close"></span>
             </div>
 
@@ -52,10 +52,10 @@
 
                     <div class="time">
                         <img src="{{ asset('zunzo/images/retinal/fire.png') }}" alt="">
-                        <p>Your cart will expire on <span id="timer-sell-out1">{{ !empty($data_user->payment_expired) ? $data_user->payment_expired->diffForHumans() : '' }}</span>
-                            Please checkout now
-                            before your items sell
-                            out!</p>
+                        <p>
+                            {{ __('Your cart will expire on') }} <span id="timer-sell-out1">{{ !empty($data_user->payment_expired) ? $data_user->payment_expired->diffForHumans() : '' }}</span>
+                            {{ __('Please checkout now before your items sell out!') }}
+                        </p>
                     </div>
 
                     @endif
@@ -101,7 +101,7 @@
                                 <input type="text" class="input-cart ml-3" value="{{ $data_user->discount_code ?? null }}" placeholder="COUPON" name="coupon" id="">
                             </div>
                             <div class="col-md-4">
-                                <button class="btn btn-secondary btn-lg btn-cart" type="submit">Apply</button>
+                                <button class="btn btn-secondary btn-lg btn-cart" type="submit">{{ __('Apply') }}</button>
                             </div>
 
                             <div class="col-md-12 mt-3">
@@ -116,7 +116,7 @@
                         @csrf
                         <div class="view-cart">
                             <p class="total">
-                                <strong>Subtotal</strong>
+                                <strong>{{ __('Subtotal') }}</strong>
                                 <span class="currency-symbol">
                                     {{ number_format($total ?? 0, 0, ',', '.') ?? '' }}
                                 </span>
@@ -125,21 +125,22 @@
 
                         <div class="view-cart">
                             <p class="total">
-                                <strong>Discount</strong> <span
+                                <strong>{{ __('Discount') }}</strong>
+                                <span
                                     class="currency-symbol">-{{ number_format($data_user->discount_value ?? 0, 0, ',', '.') ?? '' }}</span>
                             </p>
                         </div>
 
                         <div class="view-cart">
                             <p class="total">
-                                <strong>Admin Fee</strong> <span
+                                <strong>{{ __('Admin Fee') }}</strong> <span
                                     class="currency-symbol">{{ number_format(env('ADMIN_FEE', 0) ?? 0, 0, ',', '.') ?? '' }}</span>
                             </p>
                         </div>
 
                         <div class="view-cart">
                             <p class="total">
-                                <strong>Grand Total</strong> <span
+                                <strong>{{ __('Grand Total') }}</strong> <span
                                     class="currency-symbol">{{ number_format($data_user->total ?? 0, 0, ',', '.') ?? '' }}</span>
                             </p>
                         </div>
@@ -147,9 +148,9 @@
                         <div class="view-cart">
                             <div class="row">
                                 @if (!empty($data_user->payment_url) && $data_user->payment_expired > \Carbon\Carbon::now())
-                                <a href="{{ $data_user->payment_url }}" class="btn btn-secondary btn-lg btn-block" type="submit">Payment</a>
+                                <a href="{{ $data_user->payment_url }}" class="btn btn-secondary btn-lg btn-block" type="submit">{{ __('Payment') }}</a>
                                 @else
-                                <button class="btn btn-secondary btn-lg btn-block" type="submit">Checkout</button>
+                                <button class="btn btn-secondary btn-lg btn-block" type="submit">{{ __('Checkout') }}</button>
                                 @endif
                             </div>
                         </div>

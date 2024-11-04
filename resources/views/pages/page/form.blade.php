@@ -7,8 +7,10 @@
                 @bind($model)
 
                 <x-form-input col="6" name="page_title" />
+                <x-form-input col="6" name="page_title_id" label="Title Indonesia"/>
                 <x-form-input col="6" name="page_name" />
-                <x-form-textarea col="6" name="page_description" />
+                <x-form-input col="6" name="page_name_id" label="Name Indonesia"/>
+                <x-form-textarea col="6" name="page_description" label="Meta Description"/>
 
                 <x-form-upload col="3" name="images" />
 
@@ -20,11 +22,17 @@
                 </div>
                 @endif
 
-                <div class="row mt-3 mb-5">
-                    <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="mb-2" for="">Page Content</label>
                         <x-form-input col="6" type="hidden" class="editor" name="page_body" />
                         <div id="editor">{!! $model ? $model->page_body : '' !!}</div>
-                   </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="mb-2" for="">Content Indonesia</label>
+                        <x-form-input col="6" type="hidden" class="editor1" name="page_body_id" />
+                        <div id="editor1">{!! $model ? $model->page_body_id : '' !!}</div>
+                    </div>
                 </div>
 
                 @endbind

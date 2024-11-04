@@ -43,7 +43,7 @@
                                 <h5 class="mb-0">
                                     <button class="btn" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
-                                        <h5>Race Detail</h5>
+                                        <h5>{{ __('Race Detail') }}</h5>
                                     </button>
                                 </h5>
                             </div>
@@ -63,7 +63,7 @@
                                 <h5 class="mb-0">
                                     <button class="btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                         aria-expanded="false" aria-controls="collapseTwo">
-                                        <h5>Course Map</h5>
+                                        <h5>{{ __('Course Map') }}</h5>
                                     </button>
                                 </h5>
                             </div>
@@ -83,7 +83,7 @@
                                     <button class="btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                         aria-expanded="false" aria-controls="collapseThree">
                                         <h5>
-                                            Mandatory
+                                            {{ __('Mandatory') }}
                                         </h5>
                                     </button>
                                 </h5>
@@ -104,7 +104,7 @@
                                     <button class="btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapse4"
                                         aria-expanded="false" aria-controls="collapse4">
                                         <h5>
-                                            Roundown
+                                            {{ __('Roundown') }}
                                         </h5>
                                     </button>
                                 </h5>
@@ -124,11 +124,13 @@
                     <div class="event-detail-content">
 
                         @if (auth()->check())
-                        <a href="{{ route('event-register', ['event_id' => $event->field_primary]) }}"
-                            class="flat-button wow fadeInUp animated">Register now</a>
+                        <a href="{{ route('event-register', ['event_id' => $event->field_primary]) }}" class="flat-button wow fadeInUp animated">
+                            {{ __('Register now') }}
+                        </a>
                         @else
-                        <a href="{{ route('register') }}"
-                            class="flat-button wow fadeInUp animated">Create Account</a>
+                        <a href="{{ route('register') }}" class="flat-button wow fadeInUp animated">
+                            {{ __('Create Account') }}
+                        </a>
                         @endif
 
 

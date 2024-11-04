@@ -53,15 +53,15 @@
                         </div><!-- /.logo -->
                         <ul class="menu">
                             <li>
-                                <a href="{{ url('/') }}">Home page</a>
+                                <a href="{{ url('/') }}">{{ __('Home page') }}</a>
                             </li>
 
                             @foreach ($pages as $page)
-                            <li><a href="{{ route('page', ['slug' => $page->page_slug]) }}">{{ $page->page_title }}</a></li>
+                            <li><a href="{{ route('page', ['slug' => $page->page_slug]) }}">{{ $page->field_title }}</a></li>
                             @endforeach
 
                             <li style="position: relative">
-                                <a href="{{ route('events') }}">Race</a>
+                                <a href="{{ route('events') }}">{{ __('Race') }}</a>
                                 <ul class="submenu">
                                     @foreach ($events as $event)
                                     <li>
@@ -73,25 +73,40 @@
                                 </ul><!-- /.submenu -->
                             </li>
 
-                            <li><a href="{{ route('participants') }}">Participants</a></li>
+                            <li><a href="{{ route('participants') }}">{{ __('Participants') }}</a></li>
 
                             @auth
-                            <li><a href="{{ route('profile') }}">[ Profile ]</a></li>
+                            <li><a href="{{ route('profile') }}">[ {{ __('Profile') }} ]</a></li>
                             @endauth
+
+                            <li class="language">
+                                @if(session()->get('locale') == 'en')
+                                <a href="{{ route('language', ['locale' => 'id']) }}">
+                                    <img src="{{ asset('assets/en.png') }}" alt="icon">
+                                </a>
+                                @else
+                                <a href="{{ route('language', ['locale' => 'en']) }}">
+                                    <img src="{{ asset('assets/id.png') }}" alt="icon">
+                                </a>
+                                @endif
+
+                            </li>
 
                             @if (auth()->check())
                                 @if (auth()->user()->payment_status != 'PAID')
-                                <li style="margin-left: 5rem">
+                                <li class="cart-custom">
                                 @include('public.cart')
                                 </li>
                                 @endif
                             <li>
-                                <a class="btn-contact button-signout" href="{{ route('signout') }}" role="button">Sign out</a>
+                                <a class="btn-contact button-signout" href="{{ route('signout') }}" role="button">
+                                    {{ __('Sign out') }}
+                                </a>
                             </li>
                             </li>
                             @else
                                 <a class="btn-contact button-login" href="{{ route('login') }}" role="button">
-                                    Login
+                                    {{ __('Login') }}
                                 </a>
                             @endif
 
@@ -117,26 +132,7 @@
                         src="{{ env('APP_LOGO') ? url('storage/' . env('APP_LOGO')) : url('assets/media/image/logo.png') }}">
                 </a>
             </div><!-- /.logo -->
-            <ul class="menu">
-                <li>
-                    <a href="#">Home page</a>
-                </li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="#">Our Events</a>
-                    <ul class="submenu">
-                        <li><a href="event.html">Events</a></li>
-                        <li><a href="event-details.html">Events Details</a></li>
-                    </ul><!-- /.submenu -->
-                </li>
 
-                <li><a href="#">Latest News</a>
-                    <ul class="submenu">
-                        <li><a href="blog.html">Blogs</a></li>
-                        <li><a href="blog-single.html">Blogs Single</a></li>
-                    </ul><!-- /.submenu -->
-                </li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul><!-- /.menu -->
         </nav><!-- /.mainnav -->
 
     </div>
@@ -204,7 +200,7 @@
                                         fill="white" />
                                 </svg>
                                 <div class="address">
-                                    <p>Contact Us</p>
+                                    <p>{{ __('Contact Us') }}</p>
                                     <span>{{ env('APP_PHONE') }}</span>
                                 </div>
                             </div>
@@ -236,8 +232,8 @@
 
                     <div class="col-md-6 col-sm-12">
                         <div class="copyright text-right">
-                            <p>©{{ date('Y') }} <a href="{{ url('/') }}" target="_blank"> {{ config('app.name') }}.</a> All Rights
-                                Reserved.
+                            <p>©{{ date('Y') }} <a href="{{ url('/') }}" target="_blank"> {{ config('app.name') }}.</a>
+                                {{ __('All Rights Reserved') }}
                             </p>
                         </div>
 
@@ -252,115 +248,6 @@
     <a class="go-top">
         <i class="icon-ctrl"></i>
     </a>
-    <!-- Modal-login -->
-    <div class="modal fade modal-login" id="exampleModalToggle" aria-hidden="true"
-        aria-label="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="tfre_login-form">
-                    <h2>Login:</h2>
-                    <div class="error_message tfre_message"></div>
-                    <form class="tfre_login" method="post" action="{{ route('login') }}">
-                        @csrf
-                        <div class="container">
-                            <div class="form-group">
-                                <label for="username">User Name:</label>
-                                <input type="text" name="login" id="username" placeholder="Email or user name"
-                                    required="">
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password:</label>
-                                <input type="password" name="password" id="password" placeholder="Your password"
-                                    required="">
-                            </div>
-                            <div>
-                                <a href="#" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
-                                    data-bs-dismiss="modal" class="tfre-reset-password"
-                                    id="tfre-reset-password">Forgot
-                                    password?</a>
-                            </div>
-                            <input type="hidden" name="action" value="tfre_login_ajax">
-                            <button type="submit" class="flat-button">Login</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="container tfre_register" id="tfre_register_redirect">
-                    <p>Don't you have an account? <a href="#" data-bs-target="#exampleModalToggle2"
-                            data-bs-toggle="modal" data-bs-dismiss="modal">Register.</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade modal-login" id="exampleModalToggle2" aria-hidden="true"
-        aria-label="exampleModalToggleLabel2" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="tfre_registration-form">
-                    <h2>Register:</h2>
-                    <div class="error_message tfre_message"></div>
-                    <form class="tfre_register" action="{{ route('register') }}" method="post"
-                        enctype="multipart/form-data" id="tfre_custom-register-form">
-                        <div class="container">
-                            <div class="form-group">
-                                <label for="username">User Name:</label>
-                                <input type="text" name="username" id="usernames" placeholder="User name"
-                                    required="">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" name="email" id="email-modal" placeholder="Email "
-                                    required="">
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password:</label>
-                                <input type="password" name="password" id="passwords" placeholder="Your passsword"
-                                    required="">
-                            </div>
-                            <div class="form-group">
-                                <label for="confirm_password">Confirm Password:</label>
-                                <input type="password" name="confirm_password" id="confirm_password"
-                                    placeholder="Confirm password" required="">
-                            </div>
-                            <input type="hidden" name="action" value="tfre_register_ajax">
-                            <button type="submit" class="flat-button">Sign Up</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="container tfre_signin tfre_login_redirect" id="tfre_login_redirect">
-                    <button type="submit" class="flat-button">Register</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade modal-login" id="exampleModalToggle3" aria-hidden="true"
-        aria-label="exampleModalToggleLabel3" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="tfre-resset-password container">
-                    <div class="tfre_messages message tfre_messages_reset_password"></div>
-                    <form method="post" enctype="multipart/form-data">
-                        <h4>Forgot your password?</h4>
-                        <div class="form-group control-username">
-                            <input name="user_login" class="form-control control-icon reset_password_user_login"
-                                placeholder="Enter your username or email">
-                            <input type="hidden" name="tfre_security_reset_password" value="667584e015">
-                            <input type="hidden" name="action" value="tfre_reset_password_ajax">
-                            <button type="submit" class="btn flat-button btn-block tfre_forgetpass">Get new
-                                password</button>
-                        </div>
-                    </form>
-                </div>
-                <a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
-                    data-bs-dismiss="modal" class="tfre_login_redirect">Back to Login</a>
-            </div>
-        </div>
-    </div>
-    <!-- Modal-login -->
 
     <script type="text/javascript" src="{{ asset('zunzo/javascript/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('zunzo/javascript/bootstrap.min.js') }}"></script>
@@ -377,7 +264,6 @@
     <script type="text/javascript" src="{{ asset('zunzo/javascript/main.js') }}"></script>
 
     @stack('js')
-
 
     <script>
         $(document).ready(function () {

@@ -4,6 +4,8 @@ namespace App\Dao\Models;
 
 use App\Dao\Builder\DataBuilder;
 use App\Dao\Models\Core\SystemModel;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
 
 
@@ -32,7 +34,7 @@ class Page extends SystemModel
      *
      * @var array<int, string>
      */
-    protected $fillable = ['page_id', 'page_slug', 'page_name', 'page_price', 'page_image', 'page_body', 'page_title', 'page_description'];
+    protected $fillable = ['page_id', 'page_slug', 'page_name', 'page_price', 'page_image', 'page_body', 'page_title', 'page_description', 'page_name_id', 'page_title_id', 'page_body_id'];
 
     public static function field_name()
     {
@@ -41,7 +43,43 @@ class Page extends SystemModel
 
     public function getFieldNameAttribute()
     {
+        if(App::getLocale() == 'id')
+        {
+            return $this->{self::field_title().'_id'};
+        }
+
         return $this->{self::field_name()};
+    }
+
+
+    public static function field_title()
+    {
+        return 'page_title';
+    }
+
+    public function getFieldTitleAttribute()
+    {
+        if(App::getLocale() == 'id')
+        {
+            return $this->{self::field_title().'_id'};
+        }
+
+        return $this->{self::field_title()};
+    }
+
+    public static function field_body()
+    {
+        return 'page_body';
+    }
+
+    public function getFieldBodyAttribute()
+    {
+        if(App::getLocale() == 'id')
+        {
+            return $this->{self::field_body().'_id'};
+        }
+
+        return $this->{self::field_body()};
     }
 
     public static function field_image()

@@ -229,7 +229,7 @@ class PublicController extends Controller
 
         $this->calculateDiscount();
 
-        return redirect()->back()->with(['status' => 'Save Cart Success']);
+        return redirect()->back()->with(['status' => 'Success add cart']);
     }
 
     public function relationship(RelationshipRequest $request)

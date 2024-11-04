@@ -20,7 +20,6 @@
         "ifsnop/mysqldump-php": "^2.12",
         "izniburak/laravel-auto-routes": "1.6.0",
         "jantinnerezo/livewire-alert": "^3.0",
-        "joedixon/laravel-translation": "^2.2",
         "kirschbaum-development/eloquent-power-joins": "^2.6",
         "kyslik/column-sortable": "^6.4",
         "laravel/framework": "^10.0",

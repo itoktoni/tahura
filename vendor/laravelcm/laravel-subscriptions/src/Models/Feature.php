@@ -5,23 +5,20 @@ declare(strict_types=1);
 namespace Laravelcm\Subscriptions\Models;
 
 use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Laravelcm\Subscriptions\Traits\HasSlug;
-use Laravelcm\Subscriptions\Traits\HasTranslations;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravelcm\Subscriptions\Services\Period;
 use Laravelcm\Subscriptions\Traits\BelongsToPlan;
+use Laravelcm\Subscriptions\Traits\HasSlug;
+use Laravelcm\Subscriptions\Traits\HasTranslations;
 use Spatie\EloquentSortable\Sortable;
 use Spatie\EloquentSortable\SortableTrait;
 use Spatie\Sluggable\SlugOptions;
 
 /**
- * Laravelcm\Subscriptions\Models\PlanFeature.
- *
- * @property int $id
- * @property int $plan_id
+ * @property-read int|string $id
  * @property string $slug
  * @property array $title
  * @property array $description
@@ -71,7 +68,6 @@ class Feature extends Model implements Sortable
     ];
 
     protected $casts = [
-        'plan_id' => 'integer',
         'slug' => 'string',
         'value' => 'string',
         'resettable_period' => 'integer',

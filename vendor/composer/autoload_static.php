@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
+class ComposerStaticInit1d00965ca7ce94d33ee10aa09b4711ab
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -557,8 +557,8 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -820,8 +820,8 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         ),
         'Fruitcake\\Cors\\' => 
         array (
-            0 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
-            1 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
+            0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
+            1 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
         ),
         'FontLib\\' => 
         array (
@@ -8337,6 +8337,15 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
         'Spatie\\Translatable\\HasTranslations' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/HasTranslations.php',
         'Spatie\\Translatable\\Translatable' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/Translatable.php',
         'Spatie\\Translatable\\TranslatableServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/TranslatableServiceProvider.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\LanguagesRequestException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/LanguagesRequestException.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\LargeTextException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/LargeTextException.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\RateLimitException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/RateLimitException.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\TranslationDecodingException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/TranslationDecodingException.php',
+        'Stichoza\\GoogleTranslate\\Exceptions\\TranslationRequestException' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Exceptions/TranslationRequestException.php',
+        'Stichoza\\GoogleTranslate\\GoogleTranslate' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/GoogleTranslate.php',
+        'Stichoza\\GoogleTranslate\\Tokens\\GoogleTokenGenerator' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Tokens/GoogleTokenGenerator.php',
+        'Stichoza\\GoogleTranslate\\Tokens\\SampleTokenGenerator' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Tokens/SampleTokenGenerator.php',
+        'Stichoza\\GoogleTranslate\\Tokens\\TokenProviderInterface' => __DIR__ . '/..' . '/stichoza/google-translate-php/src/Tokens/TokenProviderInterface.php',
         'Stringable' => __DIR__ . '/..' . '/myclabs/php-enum/stubs/Stringable.php',
         'Svg\\CssLength' => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg/CssLength.php',
         'Svg\\DefaultStyle' => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg/DefaultStyle.php',
@@ -9766,10 +9775,10 @@ class ComposerStaticInit78b5f3eb9237971f53b8f5953929c645
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit78b5f3eb9237971f53b8f5953929c645::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit78b5f3eb9237971f53b8f5953929c645::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit78b5f3eb9237971f53b8f5953929c645::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit78b5f3eb9237971f53b8f5953929c645::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1d00965ca7ce94d33ee10aa09b4711ab::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1d00965ca7ce94d33ee10aa09b4711ab::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit1d00965ca7ce94d33ee10aa09b4711ab::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit1d00965ca7ce94d33ee10aa09b4711ab::$classMap;
 
         }, null, ClassLoader::class);
     }

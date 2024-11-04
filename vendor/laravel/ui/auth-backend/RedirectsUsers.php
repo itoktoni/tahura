@@ -15,14 +15,6 @@ trait RedirectsUsers
             return $this->redirectTo();
         }
 
-        if (empty(auth()->user()) || empty(auth()->user()->role)) {
-            return route('events');
-        }
-
-        if (method_exists($this, 'redirectAuthCustom')) {
-            return $this->redirectAuthCustom();
-        }
-
         return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
     }
 }

@@ -277,6 +277,7 @@
 
                                         <div class="col-md-6 mb-3">
                                             <div class="form-floating">
+
                                                 <select name="jersey"
                                                     class="form-select @error('jersey') error @enderror"
                                                     id="floatingInput" placeholder="jersey">
@@ -302,6 +303,7 @@
 
                                         <div class="col-md-6 mb-3">
                                             <div class="form-floating">
+
                                                 <select name="blood_type"
                                                     class="form-select @error('blood_type') error @enderror"
                                                     id="floatingInput" placeholder="blood_type">
@@ -318,6 +320,7 @@
                                             </div>
                                         </div>
 
+                                    </div>
 
                                         <div class="col-md-6 mb-3">
                                             <div class="form-floating">
@@ -329,6 +332,10 @@
                                                 @enderror
                                             </div>
                                         </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="row">
 
                                         <div class="col-md-6 mb-3">
                                             <div class="form-floating">
@@ -354,6 +361,39 @@
                                                     <span class="error">{{ $message }}</span>
                                                 @enderror
                                             </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-floating">
+                                                <textarea name="illness" class="form-control @error('illness') error @enderror" id="floatingInput" cols="30"
+                                                    rows="10">{{ old('illness') ?? (($user->illness ?? null)) }}</textarea>
+                                                <label for="floatingInput">Riwayat Penyakit</label>
+                                                @error('illness')
+                                                    <span class="error">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <div class="form-floating">
+                                                <select name="jersey"
+                                                    class="form-select @error('jersey') error @enderror"
+                                                    id="floatingInput" placeholder="jersey">
+                                                    <option value="">- Silahkan Pilih -</option>
+                                                    @foreach ($jersey as $key => $jitem)
+                                                        <option @if (($user && $jitem == $user->jersey)) selected @endif
+                                                            value="{{ $jitem }}">{{ $jitem }}</option>
+                                                    @endforeach
+                                                </select>
+                                                <label for="floatingInput">Ukuran Jersey</label>
+                                                @error('jersey')
+                                                    <span class="error">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 text-right">
+                                            <img class="img img-fluid" style="max-width: 100%" src="{{ asset('images/size.png') }}" alt="">
                                         </div>
 
                                     </div>

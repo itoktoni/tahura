@@ -130,12 +130,12 @@ class PublicController extends Controller
         ];
 
         $jersey = [
+            'XS',
             'S',
             'M',
             'L',
             'XL',
             'XXL',
-            'XXXL',
         ];
 
         $relationship = [

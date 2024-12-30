@@ -47,6 +47,10 @@ class SystemMenu extends SystemModel
         'system_menu_can_delete' => 'integer',
     ];
 
+    protected $filters = [
+        'system_menu_code'
+    ];
+
     public function fieldDatatable(): array
     {
         return [

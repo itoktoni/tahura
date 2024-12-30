@@ -3,7 +3,7 @@
 namespace App\Dao\Models;
 
 use App\Dao\Models\Core\SystemModel;
-
+use App\Dao\Models\Core\User;
 
 /**
  * Class Discount
@@ -32,5 +32,29 @@ class Discount extends SystemModel
      */
     protected $fillable = ['discount_code', 'discount_name', 'discount_formula', 'discount_max', 'discount_description'];
 
+    protected $filters = [
+        'filter',
+        'discount_code'
+    ];
+
+    public function has_users()
+    {
+        return $this->hasMany(User::class, 'discount_code', 'discount_code');
+    }
+
+    public static function field_name()
+    {
+        return 'discount_name';
+    }
+
+    public function getFieldNameAttribute()
+    {
+        return $this->{$this->field_name()};
+    }
+
+    public function fieldSearching()
+    {
+        return $this->field_name();
+    }
 
 }
